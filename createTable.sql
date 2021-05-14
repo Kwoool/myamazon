@@ -5,7 +5,7 @@ use amazon;
 create table product(
     category varchar(50),
     product_name varchar(50),
-    price int(11) not null,
+    price varchar(50)not null,
     info varchar(50),
     product_image varchar(50),
     hit int(50)

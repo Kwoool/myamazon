@@ -12,7 +12,9 @@ app.set('view engine','html');
 nunjucks.configure('views',{
     express:app,
 })
-app.use(express.static('public'));
+app.use(express.static('public')); // app.use를 무시하겠다. localhost:3000/css
+app.use(express.static('images')); // app.use를 무시하겠다.
+app.use(express.static('uploads'));
 app.use(cors());
 app.use(session({
     secret:'aaa',
@@ -34,7 +36,8 @@ sequelize.sync({ force:false, })
 })
 
 
-app.use('/',router);
+app.use('/',router); 
+
 
 app.listen(3000,()=>{
     console.log('server start port 3000');

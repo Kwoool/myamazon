@@ -105,7 +105,6 @@ ul,li{
 #one_line_content_middle>div{
     width: 350px;
     height: 400px;
-    background: brown;
     margin: 0 15px 0 10px;
     padding: 10px;
     box-sizing: border-box;
@@ -133,13 +132,11 @@ ul,li{
 #one_line_content_bottum{
     width: 1500px;
     height: 400px;
-    background: blue;
 }
 
 #one_line_content_bottum>div{
     width: 350px;
     height: 400px;
-    background: brown;
     margin: 0 15px 0 10px;
     padding: 10px;
     box-sizing: border-box;
