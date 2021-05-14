@@ -1,3 +1,7 @@
-CREATE TABLE login;
-use login;
- 
+create database amazon;
+
+use amazon;
+
+create table account(
+    
+);
