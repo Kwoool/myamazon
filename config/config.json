@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "0000",
+    "password": "tncjs0810!",
     "database": "amazon",
     "host": "127.0.0.1",
     "dialect": "mysql",
