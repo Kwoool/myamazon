@@ -46,7 +46,9 @@ ul,li{
     display: inline-block;
     float: left;
 }
-
+.v{
+    width:50vw;
+}
 #header_bottum{
     width: 100%;
     height: 40px;
