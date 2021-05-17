@@ -1,1 +1,4 @@
-테스트페이지 입니다.
+function banner(){
+    let top = document.querySelectorAll('#one_line_top>img');
+    top.
+}

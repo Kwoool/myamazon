@@ -1,7 +1,6 @@
 {
   "name": "sequelize3",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
   "dependencies": {
     "body-parser": "^1.19.0",
@@ -11,6 +10,7 @@
     "init": "^0.1.2",
     "moment": "^2.29.1",
     "multer": "^1.4.2",
+    "mysql": "^2.18.1",
     "mysql2": "^2.2.5",
     "nunjucks": "^3.2.3",
     "path": "^0.12.7",
@@ -24,5 +24,14 @@
     "start": "node server.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dnjzm108/amazon1.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dnjzm108/amazon1/issues"
+  },
+  "homepage": "https://github.com/dnjzm108/amazon1#readme",
+  "description": ""
 }

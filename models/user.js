@@ -4,35 +4,29 @@ const moment = require('moment');
 module.exports = class User extends Sequelize.Model{
     static init(sequelize){
         return super.init({
-            userid:{
+            category:{
                 type:Sequelize.STRING(20),
                 allowNull:false, // NOT NULL 
-                unique:true, // UNIQUE 
             },
-            userpw:{
+            product_name:{
                 type:Sequelize.STRING(40),
                 allowNull:false,
             },
-            username:{
+            price:{
                 type:Sequelize.STRING(10),
                 allowNull:false,
             },
-            gender:{
-                type:Sequelize.BOOLEAN,
+            info:{
+                type:Sequelize.STRING(40),
                 allowNull:false,
             },
-            userimage:{
+            product_image:{
                 type:Sequelize.STRING(100),
                 allowNull:true,
             },
-            userdt:{
-                type:Sequelize.DATEONLY,
+            hit:{
+                type:Sequelize.STRING(20),
                 allowNull:false,
-                defaultValue:Sequelize.NOW,
-                get: function() {
-                    return moment(this.getDataValue('userdt')).format('YYYY-MM-DD')
-                    //npm install moment
-                }
             }
         },{
             sequelize,
@@ -40,7 +34,7 @@ module.exports = class User extends Sequelize.Model{
             underscored:false,
             paranoid:false,
             modelName:'User',
-            tableName:'users',
+            tableName:'product',
             charset:'utf8',
             collate:'utf8_general_ci'
         });

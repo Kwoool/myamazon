@@ -62,14 +62,14 @@ a{
 
 #login_footer{
     width: auto;
-    height: 454px;
+    height: 600px;
     background-color: rgba(100, 100, 100, 0.1); /* red with opacity */
 }
 
 
 #footer_container{
     width: 700px;
-    height: 300px;
+    height: auto;
     margin: 0 auto;
 }
 

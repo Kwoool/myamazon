@@ -8,7 +8,12 @@ a{
 ul,li{
     list-style: none;
 }
-
+.none{
+    display: none;
+}
+body{
+    background:#EAEDED;
+}
 #wrap{
     width: 100%;
     background:#EAEDED;
@@ -28,13 +33,20 @@ ul,li{
     display: inline-block;
     float: left;
 }
+#state{
+    width: 160px;
+    height: 60px;
+}
 #header_top>span{
     display: inline-block;
     float: left;
+    color: #ffffff;
+}
+.color_white{
+    color: #ffffff;
 }
 .a_left{
     height: 60px;
-    background: green;
     display: inline-block;
     float: left;
 }
@@ -43,27 +55,75 @@ ul,li{
    float: right;
 }
 #search{
+    width: 50%;
+    height: 60px;
     display: inline-block;
     float: left;
+    padding: 15px 0;
+    box-sizing: border-box;
+    position: relative;
 }
-
+#search>select{
+    height: 30px;
+}
+#search>input:nth-child(1){
+    width: 80%;
+    height: 30px;
+    display: inline-block;
+}
+#search>input:nth-child(2){
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+#search>input:nth-child(1){
+    width: 80%;
+}
+#search>input:nth-child(2){
+}
 #header_bottum{
     width: 100%;
     height: 40px;
     background: #232F3E;
 }
 #header_bottum>a{
+    height: 30px;
     color: #ffffff;
     font-weight: bold;
     display: inline-block;
     margin: 5px 10px;
 }
+#make_icon{
+    width: 18px;
+    height: 12px;
+    display: inline-block;
+    position: relative;
+
+}
+#make_icon>span{
+    width: 100%;
+    height:2px;
+    background: #ffffff;
+    position: absolute;
+    display:block;
+    transition: all .35s;
+}
+#make_icon>span:nth-child(1){
+    top: 0;
+}
+#make_icon>span:nth-child(2){
+    top: 50%; 
+    transform:translateY(-50%);
+}
+#make_icon>span:nth-child(3){
+    bottom: 0;
+}
 /* header end */
 /* same line start */
 .line{
     width: 1500px;
-    background: yellow;
     margin: 50px auto 0;
+    background: #ffffff;
 }
 .line>h2{
     height: 30px;
@@ -95,6 +155,17 @@ ul,li{
     z-index: 1;
     width: 1500px;
     height: 300px;
+    overflow: hidden;
+}
+#one_line_top>img{
+    display: inline-block;
+    float: left;
+}
+#left{
+    position: absolute;
+}
+#right{
+    position: absolute;
 }
 #one_line_content_middle{
     position: relative;
@@ -103,43 +174,55 @@ ul,li{
     height: 500px;
 }
 #one_line_content_middle>div{
-    width: 350px;
+    width: 300px;
     height: 400px;
-    background: brown;
-    margin: 0 15px 0 10px;
+    margin: 0 30px;
     padding: 10px;
     box-sizing: border-box;
     display: inline-block;
     float: left;
 }
 #one_line_content_middle>div>img{
-    width: 330px;
+    width: 300px;
     height: 300px;
     margin: 10px 0;
 }
 #one_line_content_middle>div:nth-child(4)>div:nth-child(1){
-    width: 350px;
+    width: 400px;
     height: 140px;
     background: white;
-    display: inline-block;   
+    display: inline-block; 
+    margin: 0 10px;  
+}
+#one_line_content_middle>div:nth-child(4)>div:nth-child(1)>h2{
+    margin: 20px 0;
+}
+#one_middle_a{
+    width: 350px;
+    height: 30px;
+    color: #000000;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    background: rgb(240, 240, 104);
+    border: 1px solid #000000 ;
 }
 #one_line_content_middle>div:nth-child(4)>div:nth-child(2){
-    width: 350px;
+    width: 300px;
     height: 240px;
     background: yellow;
-    display: inline-block;   
+    display: inline-block; 
+    margin: 0 10px;    
 }
 
 #one_line_content_bottum{
     width: 1500px;
     height: 400px;
-    background: blue;
 }
 
 #one_line_content_bottum>div{
     width: 350px;
     height: 400px;
-    background: brown;
     margin: 0 15px 0 10px;
     padding: 10px;
     box-sizing: border-box;
@@ -170,7 +253,6 @@ ul,li{
 .style_box{
     width: 350px;
     height: 350px;
-    background: brown;
     margin: 0 15px 0 10px;
     padding: 10px;
     box-sizing: border-box;
@@ -181,6 +263,9 @@ ul,li{
     width: 330px;
     height: 250px;
     margin: 10px 0;
+}
+.style_box>h2{
+    color: #000000;
 }
 /* four_line end */
 
@@ -225,7 +310,7 @@ ul,li{
 #nine_line>div{
     width: 350px;
     height: 400px;
-    background: blueviolet;
+    color: #ffffff;
     margin: 0 10px;
     display: inline-block;
 }
@@ -235,7 +320,7 @@ ul,li{
 #tweleve_line>div{
     width: 350px;
     height: 400px;
-    background: blueviolet;
+    color: #ffffff;
     margin: 0 10px;
     display: inline-block;
 }
