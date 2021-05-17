@@ -4,6 +4,7 @@
 }
 a{
     text-decoration: none;
+    color: #000000;
 }
 ul,li{
     list-style: none;
@@ -542,4 +543,28 @@ body{
 }
 #footer_bottum>div:nth-child(2)>span{
     color: #ffffff;
+}
+
+/* hiddenbar */
+#hidden_bar{
+    width: 350px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    background: #ffffff;
+}
+#hidden_bar>ul{
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+#hidden_bar>ul:nth-child(1){
+    width: 350px;
+    height: 50px;
+    background: #232F3E;
+}
+.hiddem_ul>li>a>span:nth-child(2){
+    display: inline-block;
+    float: right;
 }
