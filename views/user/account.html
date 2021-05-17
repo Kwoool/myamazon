@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
 </head>
 <body>
-    <form type = "post" name = "/account_success">
+    <form method = "post" action="/user/account_success">
         <div class="container">
             <div class="user_mainimg">
                 <img src="/user/amazon_PNG6.png">
@@ -17,20 +17,21 @@
             <div class="account_boarder">
                 <h3>Create account</h3>
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Your name</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name = "name">
+                    <label for="exampleInputText1" class="form-label">Your name</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name = "userId">
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Email</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
+                    <label for="exampleInputEmail1" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="exampleInputPassword1" name = "userEmail">
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Password</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name = "userPw">
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">re-enter password</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                   <!-- <label for="exampleInputPassword1" class="form-label">re-enter password</label> 
+                    <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name = "repassword"> -->
+                    
                 </div>
                 <button type="submit" id="submit_btn">Create your Amazon account</button>
                 <div id ="account_text">

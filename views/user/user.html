@@ -10,7 +10,7 @@
     
 </head>
 <body>
-    <form>
+    <form action="/main" method = "post">
         <div class="container">
             <div class="user_mainimg">
                 <img src="/user/amazon_PNG6.png">
@@ -18,12 +18,12 @@
             <div class="login_boarder">
                 <h3>Sign-In</h3>
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email or mobile phone number</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <label for="exampleInputEmail1" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name = "userEmail">
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
+                    <input type="password" class="form-control" id="exampleInputPassword1" name = "userPw">
                 </div>
                 <button type="submit" id="submit_btn">Continue</button>
                 <div id="emailHelp" class="form-text">
