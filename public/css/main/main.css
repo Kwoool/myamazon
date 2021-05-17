@@ -209,8 +209,8 @@ body{
 
 
 /* one_line start */
-#one_line_left{
-    animation: left 4s;
+.one_line_left{
+    animation: left 2s;
     animation-fill-mode: forwards;
 }
 @keyframes left{
@@ -220,8 +220,8 @@ body{
         left: -1500px;
     }
 }
-#one_line_left2{
-    animation: left2 4s;
+.one_line_left2{
+    animation: left2 2s;
     animation-fill-mode: forwards;
 }
 @keyframes left2{
@@ -232,8 +232,8 @@ body{
     }
 }
 
-#one_line_right{
-    animation: right 4s;
+.one_line_right{
+    animation: right 2s;
     animation-fill-mode: forwards;
 }
 @keyframes right{
@@ -243,8 +243,8 @@ body{
         left: 1500px;
     }
 }
-#one_line_right2{
-    animation: right2 4s;
+.one_line_right2{
+    animation: right2 2s;
     animation-fill-mode: forwards;
 }
 @keyframes right2{
