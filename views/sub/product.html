@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel = "stylesheet" href = "/css/sub/product.css">
+    <link rel = "stylesheet" href = "../../public/css/sub/product.css">
 </head>
 <body>
     <div class = "showpage_wrap wrap">
@@ -13,12 +13,12 @@
             <div class = "main_showpage">
                 <div class = "main_product">
                     <ul class = "mini">
-                        <li><img src = "../image/1.jpg"></li>
-                        <li><img src = "../image/1.jpg"></li>
-                        <li><img src = "../image/1.jpg"></li>
+                        <li><img src = "/sub/10.jpg"></li>
+                        <li><img src = "/sub/10.jpg"></li>
+                        <li><img src = "/sub/10.jpg"></li>
                     </ul>>
                     <div class = "product_img">
-                       <img src = "../image/1.jpg">
+                       <img src = "../../images/sub/1.jpg">
                     </div>
                     <div class = "product_text">
                         <h2 name = "productName">{{result.product_name}}</h2>
@@ -28,17 +28,17 @@
                         <div class = "li">Was:$11.97 Details</div>
                         <div>With Deal:	<span>{{result.price}}$</span> ($7.97 / Count) + No Import Fees Deposit & $6.66 Shipping to<br/> Republic of Korea Details</div>
                         <div>You Save:	$4.00 (33%)</div>
-                            <li class = "li">MULTI - FUNCTION - 4 in 1 Set, This set contains a pair of classic, slant<br/>, pointed, and pointed slant tweezers. Perfect choice to handle a variety of jobs.</li>
-                            <li>DESIGN AND MATERIAL - This durable tweezers set is made of #420 Stainless Steel The Highest<Br/> Quality Stainless Steel for Long-Lasting Performance</li>
-                            <li>IDEAL FOR TRAVEL OR GIFT - It comes complete in a stylish case that’s perfect for gifting or travel.</li>
-                            <li>PERFECTLY CALIBRATED TENSION - Designed to remove ingrown hairs and splinters with ease.</li>
-                            <li>HIGH QUALITY - This is made up of four different functional tweezers combined in a fine travel<Br/> leather holster;Each product enjoys excellent service.</li>
-                            <div><span>{{result.info}}</span></div>
+                            <li class = "li">-MULTI - FUNCTION - 4 in 1 Set, This set contains a pair of classic, slant<br/>, pointed, and pointed slant tweezers. Perfect choice to handle a variety of jobs.</li>
+                            <li>-DESIGN AND MATERIAL - This durable tweezers set is made of #420 Stainless Steel The Highest<Br/> Quality Stainless Steel for Long-Lasting Performance</li>
+                            <li>-IDEAL FOR TRAVEL OR GIFT - It comes complete in a stylish case that’s perfect for gifting or travel.</li>
+                            <li>-PERFECTLY CALIBRATED TENSION - Designed to remove ingrown hairs and splinters with ease.</li>
+                            <li>-HIGH QUALITY - This is made up of four different functional tweezers combined in a fine travel<Br/> leather holster;Each product enjoys excellent service.</li>
+                            <div><span>-{{result.info}}</span></div>
                     </div>
                 </div>
                 <div class = "buy_button">
                     <div class = "price">
-                        $7.97
+                        ${{result.price}}
                     </div>
                     <div class = "li">
                         + No Import Fees Deposit &<br/> $6.66 Shipping to Republic of<br/> Korea Details 
@@ -58,8 +58,8 @@
                         <option value="3">3</option>
                         <option value="4">4</option>
                     </select><br/>
-                    <input type = "button" value = "Add to Cart" class = "li"><br/>
-                    <a href = "/sub/buy_check?productName={{result.product_name}}"><input type = "button" value = "Buy Now"></a>
+                    <input type = "button" value = "Add to Cart" class = "li yellow"><br/>
+                    <a href = "/sub/buy_check?productName={{result.product_name}}"><input type = "button" class = "orange" value = "Buy Now"></a>
                     <div class = "li">
                         <a href = ""#>Secure transaction</a>
                     </div>
@@ -82,18 +82,18 @@
                 Frequently bought together
             </h2>
             <div class = "freequently">
-                <div><img src = "../image/2.jpg"></div>
-                <div><img src = "../image/2.jpg"></div>
-                <div><img src = "../image/2.jpg"></div>
+                <div><img src = "../../images/sub/2.jpg"></div>
+                <div><img src = "../../images/sub/2.jpg"></div>
+                <div><img src = "../../images/sub/2.jpg"></div>
                 <div>
                     <div>Total price: $37.30</div>
-                    <input type = "button" value = "Add all three to Cart"><br/>
-                    <input type = "button" value = "Add all three to List"><br/>
+                    <input type = "button" value = "Add all three to Cart" class = "yy"><br/>
+                    <input type = "button" value = "Add all three to List" class = "ww"><br/>
                 </div>
             </div>
         </div>           
         <div class = "showpage2">
-            <div>One of these items ships sooner than the other. Show details</div>
+            <h2>One of these items ships sooner than the other. Show details</h2>
             <br/><input type = "checkbox">This item:Tweezers Set - Professional Stainless Steel Tweezers, Best Precision Tweezers for Eyebrows - Great… $7.97($7.97 / 1 Count)
             <br/><input type = "checkbox">This item:Tweezers Set - Professional Stainless Steel Tweezers, Best Precision Tweezers for Eyebrows - Great… $7.97($7.97 / 1 Count)
             <br/><input type = "checkbox">This item:Tweezers Set - Professional Stainless Steel Tweezers, Best Precision Tweezers for Eyebrows - Great… $7.97($7.97 / 1 Count)
@@ -103,46 +103,46 @@
                 Sponsored products related to this item
             </h2>
             <div class = "s1">
-                <div><img src = "../image/2.jpg"></div>
-                <div>RoosterCo Eyebro<br/>w Tweezer Set with Travel<br/> Case,4-Piece Daily<br/> Beauty Tools for Hair<br/></div>
+                <div><img src = "../../images/sub/2.jpg"></div>
+                <div class = "blue">RoosterCo Eyebro<br/>w Tweezer Set with Travel<br/> Case,4-Piece Daily<br/> Beauty Tools for Hair<br/></div>
+                <div>19,595</div>
+                <div class = "red">$6.59 </div>
+            </div>
+            <div class = "s1">
+                <div><img src = "../../images/sub/2.jpg"></div>
+                <div class = "blue">RoosterCo Eyebro<br/>w Tweezer Set with Travel<br/> Case,4-Piece Daily<br/> Beauty Tools for Hair<br/></div>
+                <div>19,595</div>
+                <div class = "red">$6.59 </div>
+            </div>
+            <div class = "s1">
+                <div><img src = "../../images/sub/2.jpg"></div>
+                <div class = "blue">RoosterCo Eyebro<br/>w Tweezer Set with Travel<br/> Case,4-Piece Daily<br/> Beauty Tools for Hair<br/></div>
+                <div>19,595</div>
+                <div class = "red">$6.59 </div>
+            </div>
+            <div class = "s1">
+                <div><img src = "../../images/sub/2.jpg"></div>
+                <div class = "blue">RoosterCo Eyebro<br/>w Tweezer Set with Travel<br/> Case,4-Piece Daily<br/> Beauty Tools for Hair<br/></div>
+                <div>19,595</div>
+                <div class = "red">$6.59 </div>
+            </div>
+            <div class = "s1">
+                <div><img src = "../../images/sub/2.jpg"></div>
+                <div class = "blue">RoosterCo Eyebro<br/>w Tweezer Set with Travel<br/> Case,4-Piece Daily<br/> Beauty Tools for Hair<br/></div>
+                <div>19,595</div>
+                <div class = "red">$6.59 </div>
+            </div>
+            <div class = "s1">
+                <div><img src = "../../images/sub/2.jpg"></div>
+                <div class = "blue">RoosterCo Eyebro<br/>w Tweezer Set with Travel<br/> Case,4-Piece Daily<br/> Beauty Tools for Hair<br/></div>
                 <div>19,595</div>
                 <div>$6.59 </div>
             </div>
             <div class = "s1">
-                <div><img src = "../image/2.jpg"></div>
-                <div>RoosterCo Eyebro<br/>w Tweezer Set with Travel<br/> Case,4-Piece Daily<br/> Beauty Tools for Hair<br/></div>
+                <div><img src = "../../images/sub/2.jpg"></div>
+                <div class = "blue">RoosterCo Eyebro<br/>w Tweezer Set with Travel<br/> Case,4-Piece Daily<br/> Beauty Tools for Hair<br/></div>
                 <div>19,595</div>
-                <div>$6.59 </div>
-            </div>
-            <div class = "s1">
-                <div><img src = "../image/2.jpg"></div>
-                <div>RoosterCo Eyebro<br/>w Tweezer Set with Travel<br/> Case,4-Piece Daily<br/> Beauty Tools for Hair<br/></div>
-                <div>19,595</div>
-                <div>$6.59 </div>
-            </div>
-            <div class = "s1">
-                <div><img src = "../image/2.jpg"></div>
-                <div>RoosterCo Eyebro<br/>w Tweezer Set with Travel<br/> Case,4-Piece Daily<br/> Beauty Tools for Hair<br/></div>
-                <div>19,595</div>
-                <div>$6.59 </div>
-            </div>
-            <div class = "s1">
-                <div><img src = "../image/2.jpg"></div>
-                <div>RoosterCo Eyebro<br/>w Tweezer Set with Travel<br/> Case,4-Piece Daily<br/> Beauty Tools for Hair<br/></div>
-                <div>19,595</div>
-                <div>$6.59 </div>
-            </div>
-            <div class = "s1">
-                <div><img src = "../image/2.jpg"></div>
-                <div>RoosterCo Eyebro<br/>w Tweezer Set with Travel<br/> Case,4-Piece Daily<br/> Beauty Tools for Hair<br/></div>
-                <div>19,595</div>
-                <div>$6.59 </div>
-            </div>
-            <div class = "s1">
-                <div><img src = "../image/2.jpg"></div>
-                <div>RoosterCo Eyebro<br/>w Tweezer Set with Travel<br/> Case,4-Piece Daily<br/> Beauty Tools for Hair<br/></div>
-                <div>19,595</div>
-                <div>$6.59 </div>
+                <div class = "red">$6.59 </div>
             </div>
         </div>      
         <div class = "showpage3">
@@ -150,52 +150,52 @@
                 4 stars and above
             </h2>
             <div class = "s1">
-                <div><img src = "../image/2.jpg"></div>
-                <div>RoosterCo Eyebro<br/>w Tweezer Set with Travel<br/> Case,4-Piece Daily<br/> Beauty Tools for Hair<br/></div>
+                <div><img src = "../../images/sub/2.jpg"></div>
+                <div class = "blue">RoosterCo Eyebro<br/>w Tweezer Set with Travel<br/> Case,4-Piece Daily<br/> Beauty Tools for Hair<br/></div>
                 <div>19,595</div>
-                <div>$6.59 </div>
+                <div class = "red">$6.59 </div>
             </div>
             <div class = "s1">
-                <div><img src = "../image/2.jpg"></div>
-                <div>RoosterCo Eyebro<br/>w Tweezer Set with Travel<br/> Case,4-Piece Daily<br/> Beauty Tools for Hair<br/></div>
+                <div><img src = "../../images/sub/2.jpg"></div>
+                <div class = "blue">RoosterCo Eyebro<br/>w Tweezer Set with Travel<br/> Case,4-Piece Daily<br/> Beauty Tools for Hair<br/></div>
                 <div>19,595</div>
-                <div>$6.59 </div>
+                <div class = "red">$6.59 </div>
             </div>
             <div class = "s1">
-                <div><img src = "../image/2.jpg"></div>
-                <div>RoosterCo Eyebro<br/>w Tweezer Set with Travel<br/> Case,4-Piece Daily<br/> Beauty Tools for Hair<br/></div>
+                <div><img src = "../../images/sub/2.jpg"></div>
+                <div class = "blue">RoosterCo Eyebro<br/>w Tweezer Set with Travel<br/> Case,4-Piece Daily<br/> Beauty Tools for Hair<br/></div>
                 <div>19,595</div>
-                <div>$6.59 </div>
+                <div class = "red">$6.59 </div>
             </div>
             <div class = "s1">
-                <div><img src = "../image/2.jpg"></div>
-                <div>RoosterCo Eyebro<br/>w Tweezer Set with Travel<br/> Case,4-Piece Daily<br/> Beauty Tools for Hair<br/></div>
+                <div><img src = "../../images/sub/2.jpg"></div>
+                <div class = "blue">RoosterCo Eyebro<br/>w Tweezer Set with Travel<br/> Case,4-Piece Daily<br/> Beauty Tools for Hair<br/></div>
                 <div>19,595</div>
-                <div>$6.59 </div>
+                <div class = "red">$6.59 </div>
             </div>
             <div class = "s1">
-                <div><img src = "../image/2.jpg"></div>
-                <div>RoosterCo Eyebro<br/>w Tweezer Set with Travel<br/> Case,4-Piece Daily<br/> Beauty Tools for Hair<br/></div>
+                <div><img src = "../../images/sub/2.jpg"></div>
+                <div class = "blue">RoosterCo Eyebro<br/>w Tweezer Set with Travel<br/> Case,4-Piece Daily<br/> Beauty Tools for Hair<br/></div>
                 <div>19,595</div>
-                <div>$6.59 </div>
+                <div class = "red">$6.59 </div>
             </div>
             <div class = "s1">
-                <div><img src = "../image/2.jpg"></div>
-                <div>RoosterCo Eyebro<br/>w Tweezer Set with Travel<br/> Case,4-Piece Daily<br/> Beauty Tools for Hair<br/></div>
+                <div><img src = "../../images/sub/2.jpg"></div>
+                <div class = "blue">RoosterCo Eyebro<br/>w Tweezer Set with Travel<br/> Case,4-Piece Daily<br/> Beauty Tools for Hair<br/></div>
                 <div>19,595</div>
-                <div>$6.59 </div>
+                <div class = "red">$6.59 </div>
             </div>
             <div class = "s1">
-                <div><img src = "../image/2.jpg"></div>
-                <div>RoosterCo Eyebro<br/>w Tweezer Set with Travel<br/> Case,4-Piece Daily<br/> Beauty Tools for Hair<br/></div>
+                <div><img src = "../../images/sub/2.jpg"></div>
+                <div class = "blue">RoosterCo Eyebro<br/>w Tweezer Set with Travel<br/> Case,4-Piece Daily<br/> Beauty Tools for Hair<br/></div>
                 <div>19,595</div>
-                <div>$6.59 </div>
+                <div class = "red">$6.59 </div>
             </div>
             <div class = "s1">
-                <div><img src = "../image/2.jpg"></div>
+                <div><img src = "../../images/sub/2.jpg"></div>
                 <div>RoosterCo Eyebro<br/>w Tweezer Set with Travel<br/> Case,4-Piece Daily<br/> Beauty Tools for Hair<br/></div>
                 <div>19,595</div>
-                <div>$6.59 </div>
+                <div class = "red">$6.59 </div>
             </div>
         </div>
         <div class = "showpage4">
@@ -227,46 +227,47 @@
         </div>   
         <div class = "question">
             <h2>Have a question?</h2>
-            <div>Find answers in product info, Q&As, reviews</div>
-            <input type = "text" placeholder="Type your question or keyword">
+            <div class = "grey">Find answers in product info, Q&As, reviews</div>
+            <input type = "text" placeholder="Type your question or keyword" class = "long">
         </div>  
         <div class = "description">
             <h3>
                 Product Description
             </h3>   
-            <div><img src = "../image/3.jpg"></div>   
+            <div><img src = "../../images/sub/3.jpg"></div>   
             <div class = "d2">
-                <div><img src = "../image/4'.jpg"></div>
-                <div>4 in 1 Professional Tweezers Set<Br/>
-                    With four different shaped tweezers to choose from<Br/>
-                    1.Pointed tweezers: Extremely sharp tweezers that are<Br/> excellent for really fine small or ingrown hairs.<Br/>
+                <div><img src = "../../images/sub/4'.jpg"></div>
+                <div><div>4 in 1 Professional Tweezers Set<br/></div>
+                    With four different shaped tweezers to choose from<br/>
+                    1. Pointed tweezers: Extremely sharp tweezers that are<br/> excellent for really fine small or ingrown hairs.<br/>
                     
-                    2.Slant tweezers: Great for hair removal on larger areas on<Br/> your face or around your bikini line.<Br/>
+                    2. Slant tweezers: Great for hair removal on larger areas on<br/> your face or around your bikini line.<br/>
                     
-                    3.Pointed slant tweezers: This is the most versatile tweezers<Br/> that can be used for precision work such as eyebrows and<Br/> ingrown hairs.<Br/>
+                    3. Pointed slant tweezers: This is the most versatile tweezers<br/> that can be used for precision work such as eyebrows and<br/> ingrown hairs.<br/>
                     
-                    4.Classic tweezers: Precision-aligned slant tip for larger application purpose.</div>
+                    4. Classic tweezers: Precision-aligned slant tip for larger application purpose.
+                </div>
             </div>   
             <div class = "d3">
                 <h3>Tweezers for Eyebrow and Perfect Gift</h3>
                 <div>
-                    <img src = "../image/5.jpg">
+                    <img src = "../../images/sub/5.jpg">
                     <div>Your brows are one of your most important<br/> features. Well-groomed eyebrows frame<br/> your eyes and highlight your<br/> features, so crafting<br/> the perfect arch is definitely in your best<br/> interest.</div>
                 </div>
                 <div>
-                    <img src = "../image/5.jpg">
+                    <img src = "../../images/sub/5.jpg">
                     <div>Your brows are one of your most important<br/> features. Well-groomed eyebrows frame<br/> your eyes and highlight your<br/> features, so crafting<br/> the perfect arch is definitely in your best<br/> interest.</div>
                 </div>
                 <div>
-                    <img src = "../image/5.jpg">
+                    <img src = "../../images/sub/5.jpg">
                     <div>Your brows are one of your most important<br/> features. Well-groomed eyebrows frame<br/> your eyes and highlight your<br/> features, so crafting<br/> the perfect arch is definitely in your best<br/> interest.</div>
                 </div>
             </div>          
             <div class = "d4">
-                <img src = "../image/6.jpg">
+                <img src = "../../images/sub/6.jpg">
             </div>   
         </div>
-        <div>
+        <div class = "h2">
             <h2>Product details</h2>
             <div>
                 Is Discontinued By Manufacturer : No<br/>
@@ -281,51 +282,51 @@
                 4.5 out of 5 stars    21,543 ratings<br/>
             </div>
         </div>  
-        <div>
+        <div class = "h2">
             <h2>Compare with similar items</h2>
             <table>
                 <tr>
-                    <td class>
+                    <td class = "img">
                         
                     </td>
                     <td>
-                        <img class = "img" src = "../image/7.jpg"> 
+                        <img class = "img" src = "../../images/sub/7.jpg"> 
                         <div>
                             Tweezer Guru Precision Slant<Br/> Eyebrow Tweezers for Women &<Br/> Men - Professional Stainless Steel<br/> Tweezers for Eyebrows, Facial Hair<br/> & Ingrown Hair Removal (Black)
                         </div><br/>
-                        <input type = "button" value = "Add to Cart">
+                        <input type = "button" value = "Add to Cart" class = "Addto">
                     </td>
                     <td>
-                        <img class = "img" src = "../image/7.jpg">
+                        <img class = "img" src = "../../images/sub/7.jpg">
                         <div>
                             Tweezer Guru Precision Slant<Br/> Eyebrow Tweezers for Women &<Br/> Men - Professional Stainless Steel<br/> Tweezers for Eyebrows, Facial Hair<br/> & Ingrown Hair Removal (Black)
                         </div><br/>
-                        <input type = "button" value = "Add to Cart">
+                        <input type = "button" value = "Add to Cart" class = "Addto">
                     </td>
                     <td>
-                        <img class = "img" src = "../image/7.jpg">
+                        <img class = "img" src = "../../images/sub/7.jpg">
                         <div>
                             Tweezer Guru Precision Slant<Br/> Eyebrow Tweezers for Women &<Br/> Men - Professional Stainless Steel<br/> Tweezers for Eyebrows, Facial Hair<br/> & Ingrown Hair Removal (Black)
                         </div><br/>
-                        <input type = "button" value = "Add to Cart">
+                        <input type = "button" value = "Add to Cart" class = "Addto">
                     </td>
                     <td>
-                        <img class = "img" src = "../image/7.jpg">
+                        <img class = "img" src = "../../images/sub/7.jpg">
                         <div>
                             Tweezer Guru Precision Slant<Br/> Eyebrow Tweezers for Women &<Br/> Men - Professional Stainless Steel<br/> Tweezers for Eyebrows, Facial Hair<br/> & Ingrown Hair Removal (Black)
                         </div><br/>
-                        <input type = "button" value = "Add to Cart">
+                        <input type = "button" value = "Add to Cart" class = "Addto">
                     </td>
                     <td>
-                        <img class = "img"src = "../image/7.jpg">
+                        <img class = "img" src = "../../images/sub/7.jpg">
                         <div>
                             Tweezer Guru Precision Slant<Br/> Eyebrow Tweezers for Women &<Br/> Men - Professional Stainless Steel<br/> Tweezers for Eyebrows, Facial Hair<br/> & Ingrown Hair Removal (Black)
                         </div><br/>
-                        <input type = "button" value = "Add to Cart">
+                        <input type = "button" value = "Add to Cart" class = "Addto">
                     </td>
                 </tr>
                 <tr>
-                    <td>Customer Rating</td>
+                    <td class = "bold1">Customer Rating</td>
                     <td>21543</td>
                     <td>21543</td>
                     <td>21543</td>
@@ -333,15 +334,15 @@
                     <td>21543</td>
                 </tr>
                 <tr>
-                    <td>Price</td>
-                    <td>$7.97</td>
-                    <td>$7.97</td>
-                    <td>$7.97</td>
-                    <td>$7.97</td>
-                    <td>$7.97</td>
+                    <td class = "bold1">Price</td>
+                    <td class = "bold">$7.97</td>
+                    <td class = "bold">$7.97</td>
+                    <td class = "bold">$7.97</td>
+                    <td class = "bold">$7.97</td>
+                    <td class = "bold">$7.97</td>
                 </tr>
                 <tr>
-                    <td>Sold By</td>
+                    <td class = "bold1">Sold By</td>
                     <td>Amadurra</td>
                     <td>Amadurra</td>
                     <td>Amadurra</td>
@@ -349,7 +350,7 @@
                     <td>Amadurra</td>
                 </tr>
                 <tr>
-                    <td>Item Dimensions</td>
+                    <td class = "bold1">Item Dimensions</td>
                     <td>3.77 x 0.39 x 0.07 inches</td>
                     <td>3.77 x 0.39 x 0.07 inches</td>
                     <td>3.77 x 0.39 x 0.07 inches</td>
@@ -363,57 +364,57 @@
                 Sponsored products related to this item
             </h2>
             <div class = "s1">
-                <div><img src = "../image/2.jpg"></div>
-                <div>RoosterCo Eyebro<br/>w Tweezer Set with Travel<br/> Case,4-Piece Daily<br/> Beauty Tools for Hair<br/></div>
+                <div><img src = "../../images/sub/2.jpg"></div>
+                <div class = "blue">RoosterCo Eyebro<br/>w Tweezer Set with Travel<br/> Case,4-Piece Daily<br/> Beauty Tools for Hair<br/></div>
                 <div>19,595</div>
-                <div>$6.59 </div>
+                <div class = "red">$6.59 </div>
             </div>
             <div class = "s1">
-                <div><img src = "../image/2.jpg"></div>
-                <div>RoosterCo Eyebro<br/>w Tweezer Set with Travel<br/> Case,4-Piece Daily<br/> Beauty Tools for Hair<br/></div>
+                <div><img src = "../../images/sub/2.jpg"></div>
+                <div class = "blue">RoosterCo Eyebro<br/>w Tweezer Set with Travel<br/> Case,4-Piece Daily<br/> Beauty Tools for Hair<br/></div>
                 <div>19,595</div>
-                <div>$6.59 </div>
+                <div class = "red">$6.59 </div>
             </div>
             <div class = "s1">
-                <div><img src = "../image/2.jpg"></div>
-                <div>RoosterCo Eyebro<br/>w Tweezer Set with Travel<br/> Case,4-Piece Daily<br/> Beauty Tools for Hair<br/></div>
+                <div><img src = "../../images/sub/2.jpg"></div>
+                <div class = "blue">RoosterCo Eyebro<br/>w Tweezer Set with Travel<br/> Case,4-Piece Daily<br/> Beauty Tools for Hair<br/></div>
                 <div>19,595</div>
-                <div>$6.59 </div>
+                <div class = "red">$6.59 </div>
             </div>
             <div class = "s1">
-                <div><img src = "../image/2.jpg"></div>
-                <div>RoosterCo Eyebro<br/>w Tweezer Set with Travel<br/> Case,4-Piece Daily<br/> Beauty Tools for Hair<br/></div>
+                <div><img src = "../../images/sub/2.jpg"></div>
+                <div class = "blue">RoosterCo Eyebro<br/>w Tweezer Set with Travel<br/> Case,4-Piece Daily<br/> Beauty Tools for Hair<br/></div>
                 <div>19,595</div>
-                <div>$6.59 </div>
+                <div class = "red">$6.59 </div>
             </div>
             <div class = "s1">
-                <div><img src = "../image/2.jpg"></div>
-                <div>RoosterCo Eyebro<br/>w Tweezer Set with Travel<br/> Case,4-Piece Daily<br/> Beauty Tools for Hair<br/></div>
+                <div><img src = "../../images/sub/2.jpg"></div>
+                <div class = "blue">RoosterCo Eyebro<br/>w Tweezer Set with Travel<br/> Case,4-Piece Daily<br/> Beauty Tools for Hair<br/></div>
                 <div>19,595</div>
-                <div>$6.59 </div>
+                <div class = "red">$6.59 </div>
             </div>
             <div class = "s1">
-                <div><img src = "../image/2.jpg"></div>
-                <div>RoosterCo Eyebro<br/>w Tweezer Set with Travel<br/> Case,4-Piece Daily<br/> Beauty Tools for Hair<br/></div>
+                <div><img src = "../../images/sub/2.jpg"></div>
+                <div class = "blue">RoosterCo Eyebro<br/>w Tweezer Set with Travel<br/> Case,4-Piece Daily<br/> Beauty Tools for Hair<br/></div>
                 <div>19,595</div>
-                <div>$6.59 </div>
+                <div class = "red">$6.59 </div>
             </div>
             <div class = "s1">
-                <div><img src = "../image/2.jpg"></div>
-                <div>RoosterCo Eyebro<br/>w Tweezer Set with Travel<br/> Case,4-Piece Daily<br/> Beauty Tools for Hair<br/></div>
+                <div><img src = "../../images/sub/2.jpg"></div>
+                <div class = "blue">RoosterCo Eyebro<br/>w Tweezer Set with Travel<br/> Case,4-Piece Daily<br/> Beauty Tools for Hair<br/></div>
                 <div>19,595</div>
-                <div>$6.59 </div>
+                <div class = "red">$6.59 </div>
             </div>
             <div class = "s1">
-                <div><img src = "../image/2.jpg"></div>
-                <div>RoosterCo Eyebro<br/>w Tweezer Set with Travel<br/> Case,4-Piece Daily<br/> Beauty Tools for Hair<br/></div>
+                <div><img src = "../../images/sub/2.jpg"></div>
+                <div class = "blue">RoosterCo Eyebro<br/>w Tweezer Set with Travel<br/> Case,4-Piece Daily<br/> Beauty Tools for Hair<br/></div>
                 <div>19,595</div>
-                <div>$6.59 </div>
+                <div class = "red">$6.59 </div>
             </div>
         </div>
         <div class = "QQ">
             <h2>Customer questions & answers</h2>
-            <input type = "Text" placeholder="Hava a question? Search for answers">
+            <input type = "Text" placeholder="Hava a question? Search for answers" class = "long">
             <br/>
             <div>
                 <div class = "Q">
@@ -474,18 +475,18 @@
         <div class = "review">
             <div class = "star">
                 <h2>Customer reviews</h2>
-                <div><img src = "../image/9.png">4.5 out of 5</div>
-                <div>21,543 global ratings</div>
-                <div>5 star<img src = "../image/8.png">73%</div>
-                <div>5 star<img src = "../image/8.png">73%</div>
-                <div>5 star<img src = "../image/8.png">73%</div>
-                <div>5 star<img src = "../image/8.png">73%</div>
-                <div>5 star<img src = "../image/8.png">73%</div>
+                <div><img src = "../../images/sub/9.png">4.5 out of 5</div>
+                <div class = "grey">21,543 global ratings</div>
+                <div><span class = "blue space">5 star</span><img src = "../../images/sub/8.png"><span class = "space2 blue">73%</span></div>
+                <div><span class = "blue space">5 star</span><img src = "../../images/sub/8.png"><span class = "space2 blue">73%</span></div>
+                <div><span class = "blue space">5 star</span><img src = "../../images/sub/8.png"><span class = "space2 blue">73%</span></div>
+                <div><span class = "blue space">5 star</span><img src = "../../images/sub/8.png"><span class = "space2 blue">73%</span></div>
+                <div><span class = "blue space">5 star</span><img src = "../../images/sub/8.png"><span class = "space2 blue">73%</span></div>
                 <div><a href = "">How are ratings calculated?</a></div>
                 <h3>By feature</h3>
-                <div>for traveling<img src = "../image/9.png"></div>
-                <div>for traveling<img src = "../image/9.png"></div>
-                <div>for traveling<img src = "../image/9.png"></div>
+                <div><span class = "space3">for traveling</span><img src = "../../images/sub/9.png"></div>
+                <div><span class = "space3">for traveling</span><img src = "../../images/sub/9.png"></div>
+                <div><span class = "space3">for traveling</span><img src = "../../images/sub/9.png"></div>
                 <div><a href = "">See more</a></div>
                 <h3>Review this product</h3>
                 <div>Share your thoughts with other customers</div>
@@ -496,10 +497,10 @@
                     <h3>
                         Reviews with images
                     </h3><br/>
-                    <img src = "../image/10.jpg">
-                    <img src = "../image/10.jpg">
-                    <img src = "../image/10.jpg">
-                    <img src = "../image/10.jpg">
+                    <img src = "../../images/sub/10.jpg">
+                    <img src = "../../images/sub/10.jpg">
+                    <img src = "../../images/sub/10.jpg">
+                    <img src = "../../images/sub/10.jpg">
                     <br/>
                     <a href = "">See all customer images</a>
                 </div>
@@ -524,67 +525,54 @@
                         <h3>
                             Top reviews from the United States
                         </h3><br/>
-                        <div>Arti</div>
-                        <div><img src = "../image/9.png">Great tweezers</div>
+                        <div><img src = "../../images/sub/people.jpg"><span class = "space2">Arti</span></div>
+                        <div><img src = "../../images/sub/9.png"><span class = "bold space2">Great tweezers</span></div>
                         <div>Reviewed in the United States on August 5, 2019</div>
-                        <div>Verified Purchase</div>
-                        <div>Needed some new tweezers and didnt expect much when i bought these. But i can easily say they are my<br/> go to tweezers. They manage to grasp the thin and thick hairs and pull them completely out at the root. Im<br/> suprised i ended up using all 4 styles. Even worked well on a wooden splinter i got in my foot. Great buy<br/> and at a great price</div>
-                        <div><img src = "../image/11.jpg"></div>
+                        <div class = "oo">Verified Purchase</div>
+                        <div class = "textd">Needed some new tweezers and didnt expect much when i bought these. But i can easily say they are my<br/> go to tweezers. They manage to grasp the thin and thick hairs and pull them completely out at the root. Im<br/> suprised i ended up using all 4 styles. Even worked well on a wooden splinter i got in my foot. Great buy<br/> and at a great price</div>
+                        <div><img src = "../../images/sub/11.jpg"></div>
                         <div>158 people found this helpful</div>
-                        <br><input type = "button" value = "helpful"> | Report abues
+                        <br><input type = "button" value = "helpful" class = "size"> | Report abues
                     </div>
                     <div>
                         <h3>
                             Top reviews from the United States
                         </h3><br/>
-                        <div>Arti</div>
-                        <div><img src = "../image/9.png">Great tweezers</div>
+                        <div><img src = "../../images/sub/people.jpg"><span class = "space2">Arti</span></div>
+                        <div><img src = "../../images/sub/9.png"><span class = "bold space2">Great tweezers</span></div>
                         <div>Reviewed in the United States on August 5, 2019</div>
-                        <div>Verified Purchase</div>
-                        <div>Needed some new tweezers and didnt expect much when i bought these. But i can easily say they are my<br/> go to tweezers. They manage to grasp the thin and thick hairs and pull them completely out at the root. Im<br/> suprised i ended up using all 4 styles. Even worked well on a wooden splinter i got in my foot. Great buy<br/> and at a great price</div>
-                        <div><img src = "../image/11.jpg"></div>
+                        <div class = "oo">Verified Purchase</div>
+                        <div class = "textd">Needed some new tweezers and didnt expect much when i bought these. But i can easily say they are my<br/> go to tweezers. They manage to grasp the thin and thick hairs and pull them completely out at the root. Im<br/> suprised i ended up using all 4 styles. Even worked well on a wooden splinter i got in my foot. Great buy<br/> and at a great price</div>
+                        <div><img src = "../../images/sub/11.jpg"></div>
                         <div>158 people found this helpful</div>
-                        <br><input type = "button" value = "helpful"> | Report abues
+                        <br><input type = "button" value = "helpful" class = "size"> | Report abues
                     </div>
                     <div>
                         <h3>
                             Top reviews from the United States
                         </h3><br/>
-                        <div>Arti</div>
-                        <div><img src = "../image/9.png">Great tweezers</div>
+                        <div><img src = "../../images/sub/people.jpg"><span class = "space2">Arti</span></div>
+                        <div><img src = "../../images/sub/9.png"><span class = "bold space2">Great tweezers</span></div>
                         <div>Reviewed in the United States on August 5, 2019</div>
-                        <div>Verified Purchase</div>
-                        <div>Needed some new tweezers and didnt expect much when i bought these. But i can easily say they are my<br/> go to tweezers. They manage to grasp the thin and thick hairs and pull them completely out at the root. Im<br/> suprised i ended up using all 4 styles. Even worked well on a wooden splinter i got in my foot. Great buy<br/> and at a great price</div>
-                        <div><img src = "../image/11.jpg"></div>
+                        <div class = "oo">Verified Purchase</div>
+                        <div class = "textd">Needed some new tweezers and didnt expect much when i bought these. But i can easily say they are my<br/> go to tweezers. They manage to grasp the thin and thick hairs and pull them completely out at the root. Im<br/> suprised i ended up using all 4 styles. Even worked well on a wooden splinter i got in my foot. Great buy<br/> and at a great price</div>
+                        <div><img src = "../../images/sub/11.jpg"></div>
                         <div>158 people found this helpful</div>
-                        <br><input type = "button" value = "helpful"> | Report abues
-                    </div>
+                        <br><input type = "button" value = "helpful" class = "size"> | Report abues
+                    </div>  
                     <div>
                         <h3>
                             Top reviews from the United States
                         </h3><br/>
-                        <div>Arti</div>
-                        <div><img src = "../image/9.png">Great tweezers</div>
+                        <div><img src = "../../images/sub/people.jpg"><span class = "space2">Arti</span></div>
+                        <div><img src = "../../images/sub/9.png"><span class = "bold space2">Great tweezers</span></div>
                         <div>Reviewed in the United States on August 5, 2019</div>
-                        <div>Verified Purchase</div>
-                        <div>Needed some new tweezers and didnt expect much when i bought these. But i can easily say they are my<br/> go to tweezers. They manage to grasp the thin and thick hairs and pull them completely out at the root. Im<br/> suprised i ended up using all 4 styles. Even worked well on a wooden splinter i got in my foot. Great buy<br/> and at a great price</div>
-                        <div><img src = "../image/11.jpg"></div>
+                        <div class = "oo">Verified Purchase</div>
+                        <div class = "textd">Needed some new tweezers and didnt expect much when i bought these. But i can easily say they are my<br/> go to tweezers. They manage to grasp the thin and thick hairs and pull them completely out at the root. Im<br/> suprised i ended up using all 4 styles. Even worked well on a wooden splinter i got in my foot. Great buy<br/> and at a great price</div>
+                        <div><img src = "../../images/sub/11.jpg"></div>
                         <div>158 people found this helpful</div>
-                        <br><input type = "button" value = "helpful"> | Report abues
-                    </div>
-                    <div>
-                        <h3>
-                            Top reviews from the United States
-                        </h3><br/>
-                        <div>Arti</div>
-                        <div><img src = "../image/9.png">Great tweezers</div>
-                        <div>Reviewed in the United States on August 5, 2019</div>
-                        <div>Verified Purchase</div>
-                        <div>Needed some new tweezers and didnt expect much when i bought these. But i can easily say they are my<br/> go to tweezers. They manage to grasp the thin and thick hairs and pull them completely out at the root. Im<br/> suprised i ended up using all 4 styles. Even worked well on a wooden splinter i got in my foot. Great buy<br/> and at a great price</div>
-                        <div><img src = "../image/11.jpg"></div>
-                        <div>158 people found this helpful</div>
-                        <br><input type = "button" value = "helpful"> | Report abues
-                    </div>
+                        <br><input type = "button" value = "helpful" class = "size"> | Report abues
+                    </div>    
                 </div>
             </div>
         </div>
@@ -593,56 +581,56 @@
                 What other items do customers buy after viewing this item?
             </h2>
             <div class = "s1">
-                <div><img src = "../image/2.jpg"></div>
-                <div>RoosterCo Eyebro<br/>w Tweezer Set with Travel<br/> Case,4-Piece Daily<br/> Beauty Tools for Hair<br/></div>
+                <div><img src = "../../images/sub/2.jpg"></div>
+                <div class = "blue">RoosterCo Eyebro<br/>w Tweezer Set with Travel<br/> Case,4-Piece Daily<br/> Beauty Tools for Hair<br/></div>
                 <div>19,595</div>
-                <div>$6.59 </div>
+                <div class = "red">$6.59 </div>
             </div>
             <div class = "s1">
-                <div><img src = "../image/2.jpg"></div>
-                <div>RoosterCo Eyebro<br/>w Tweezer Set with Travel<br/> Case,4-Piece Daily<br/> Beauty Tools for Hair<br/></div>
+                <div><img src = "../../images/sub/2.jpg"></div>
+                <div class = "blue">RoosterCo Eyebro<br/>w Tweezer Set with Travel<br/> Case,4-Piece Daily<br/> Beauty Tools for Hair<br/></div>
                 <div>19,595</div>
-                <div>$6.59 </div>
+                <div class = "red">$6.59 </div>
             </div>
             <div class = "s1">
-                <div><img src = "../image/2.jpg"></div>
-                <div>RoosterCo Eyebro<br/>w Tweezer Set with Travel<br/> Case,4-Piece Daily<br/> Beauty Tools for Hair<br/></div>
+                <div><img src = "../../images/sub/2.jpg"></div>
+                <div class = "blue">RoosterCo Eyebro<br/>w Tweezer Set with Travel<br/> Case,4-Piece Daily<br/> Beauty Tools for Hair<br/></div>
                 <div>19,595</div>
-                <div>$6.59 </div>
+                <div class = "red">$6.59 </div>
             </div>
             <div class = "s1">
-                <div><img src = "../image/2.jpg"></div>
-                <div>RoosterCo Eyebro<br/>w Tweezer Set with Travel<br/> Case,4-Piece Daily<br/> Beauty Tools for Hair<br/></div>
+                <div><img src = "../../images/sub/2.jpg"></div>
+                <div class = "blue">RoosterCo Eyebro<br/>w Tweezer Set with Travel<br/> Case,4-Piece Daily<br/> Beauty Tools for Hair<br/></div>
                 <div>19,595</div>
-                <div>$6.59 </div>
+                <div class = "red">$6.59 </div>
             </div>
             <div class = "s1">
-                <div><img src = "../image/2.jpg"></div>
-                <div>RoosterCo Eyebro<br/>w Tweezer Set with Travel<br/> Case,4-Piece Daily<br/> Beauty Tools for Hair<br/></div>
+                <div><img src = "../../images/sub/2.jpg"></div>
+                <div class = "blue">RoosterCo Eyebro<br/>w Tweezer Set with Travel<br/> Case,4-Piece Daily<br/> Beauty Tools for Hair<br/></div>
                 <div>19,595</div>
-                <div>$6.59 </div>
+                <div class = "red">$6.59 </div>
             </div>
             <div class = "s1">
-                <div><img src = "../image/2.jpg"></div>
-                <div>RoosterCo Eyebro<br/>w Tweezer Set with Travel<br/> Case,4-Piece Daily<br/> Beauty Tools for Hair<br/></div>
+                <div><img src = "../../images/sub/2.jpg"></div>
+                <div class = "blue">RoosterCo Eyebro<br/>w Tweezer Set with Travel<br/> Case,4-Piece Daily<br/> Beauty Tools for Hair<br/></div>
                 <div>19,595</div>
-                <div>$6.59 </div>
+                <div class = "red">$6.59 </div>
             </div>
             <div class = "s1">
-                <div><img src = "../image/2.jpg"></div>
-                <div>RoosterCo Eyebro<br/>w Tweezer Set with Travel<br/> Case,4-Piece Daily<br/> Beauty Tools for Hair<br/></div>
+                <div><img src = "../../images/sub/2.jpg"></div>
+                <div class = "blue">RoosterCo Eyebro<br/>w Tweezer Set with Travel<br/> Case,4-Piece Daily<br/> Beauty Tools for Hair<br/></div>
                 <div>19,595</div>
-                <div>$6.59 </div>
+                <div class = "red">$6.59 </div>
             </div>
             <div class = "s1">
-                <div><img src = "../image/2.jpg"></div>
-                <div>RoosterCo Eyebro<br/>w Tweezer Set with Travel<br/> Case,4-Piece Daily<br/> Beauty Tools for Hair<br/></div>
+                <div><img src = "../../images/sub/2.jpg"></div>
+                <div class = "blue">RoosterCo Eyebro<br/>w Tweezer Set with Travel<br/> Case,4-Piece Daily<br/> Beauty Tools for Hair<br/></div>
                 <div>19,595</div>
-                <div>$6.59 </div>
+                <div class = "red">$6.59 </div>
             </div>
         </div>
-        <div>
-            Disclaimer: While we work to ensure that product information is correct, on occasion manufacturers may alter their ingredient lists. Actual product packaging and materials may contain more and/or different information than that shown on our Web site. We recommend that you do not solely rely on the information presented and that you always read labels, warnings, and directions before using or consuming a product. For additional information about a product, please contact the manufacturer. Content on this site is for reference purposes and is not intended to substitute for advice given by a physician, pharmacist, or other licensed health-care professional. You should not use this information as self-diagnosis or for treating a health problem or disease. Contact your health-care provider immediately if you suspect that you have a medical problem. Information and statements regarding dietary supplements have not been evaluated by the Food and Drug Administration and are not intended to diagnose, treat, cure, or prevent any disease or health condition. Amazon.com assumes no liability for inaccuracies or misstatements about products.
+        <div class = "f">
+            <div>Disclaimer</div>: While we work to ensure that product information is correct, on occasion manufacturers may alter their ingredient lists. Actual product packaging and materials may contain more and/or different information than that shown on our Web site. We recommend that you do not solely rely on the information presented and that you always read labels, warnings, and directions before using or consuming a product. For additional information about a product, please contact the manufacturer. Content on this site is for reference purposes and is not intended to substitute for advice given by a physician, pharmacist, or other licensed health-care professional. You should not use this information as self-diagnosis or for treating a health problem or disease. Contact your health-care provider immediately if you suspect that you have a medical problem. Information and statements regarding dietary supplements have not been evaluated by the Food and Drug Administration and are not intended to diagnose, treat, cure, or prevent any disease or health condition. Amazon.com assumes no liability for inaccuracies or misstatements about products.
         </div>
         <div></div>
     </div>      

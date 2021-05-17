@@ -10,31 +10,33 @@
 <body>
     <div class = "check_wrap wrap">
         <div class = "buy">
+            <img src = "/sub/gomae.gif">
+        </div>
+        <div class = "buy">
             <h1>Review your order</h1>
             <div class = "buy_info">
                 <div class = "user_info">
                     <ul class = "address">
                         <h3>Shipping address</h3>
-                        <a href = "/sub/address?productName={{productName}}"><input type = "button" value = "address/payment method"></a><br/>
-                        {{name}}<br/>
-                        {{nation}}<br/>
-                        {{Street}}<br/>
-                        {{City}}<br/>
-                        {{State}}<br/>
-                        {{ZIP}}<br/>
-                        {{phone}}<br/>
+                        name : {{name}}<br/>
+                        nation : {{nation}}<br/>
+                        Street : {{Street}}<br/>
+                        City : {{City}}<br/>
+                        State : {{State}}<br/>
+                        ZIP : {{ZIP}}<br/>
+                        phone : {{phone}}<br/>
                     </ul>
                     <ul class = "pay">
                         <h3>Payment method</h3>
-                        {{card}}<br/>
-                        {{payment}}<br/>
+                        Cardname : {{card}}<br/>
+                        Cardnumber : {{payment}}<br/>
                     </ul>
+                    <a href = "/sub/address?productName={{productName}}"><input type = "button" value = "address/payment method" class = "top"></a><br/>
                 </div>
                 <div class = "product_info">
                     <div>
-                        <div>Estimated delivery:  May 18, 2021 - May 23, 2021</div>
-                        <span>{{product_name}}</span><br/>
-                        <span>{{product_cost}}</span>&<a href = "">FREE Returns</a>
+                        <span class = "black">product_name : {{product_name}}</span><br/>
+                        <span class = "red">product_cost : {{product_cost}}$</span>&<a href = "">FREE Returns</a>
                         <div>Quantity: 1</div>
                         <div>sold by:Bosidin</div>
                         <button>Add gift options</button>                    
@@ -47,28 +49,21 @@
                         FREE Shipping<br/>
                         <input type = "radio">Friday, May 21 - Sunday, May 23
                         FREE Shipping<br/>
+                        <div>Estimated delivery:  May 18, 2021 - May 23, 2021</div>
                     </div>
                 </div>
             </div>
             <div class = "buy_price">
-                <a href = "/main"><input type = "button" value = "Place your order"></a>
-                <div>
-                    By placing your order, you agree to Amazon's<br/> privacy notice and conditions of use.<br/>total cost : <span>{{product_cost}}</span></div>
-                </div>
-                <div>
-                    Amazon Currency Converter is<br/> Enabled.  Learn more
-                </div>
-                <div>PAYMENT TOTAL : <span class = "span">{{product_cost}}</span></div>
-                <div>
+                <a href = "/main"><input type = "button" value = "Place your order" class = "width"></a><br/>
+                    By placing your order, you agree to Amazon's<br/> privacy notice and conditions of use.<br/>total cost : <span class = "red">{{product_cost}}$</span>
+                    <br/>Amazon Currency Converter is<br/> Enabled.  Learn more<br/>
+                    PAYMENT TOTAL : <span class = "span red">{{product_cost}}$</span><br/>
                     Applicable Exchange Rate<br/>
                     1 USD = 1151.0672249428 KRW<br/>
-                    
                     (includes all Amazon fees and charges)<br/>
-                    
                     Qualifying offers:<br/>
                     Free Shipping<br/>
                     How are shipping costs calculated?<br/>
-                </div>
             </div>
         </div>
     </div>

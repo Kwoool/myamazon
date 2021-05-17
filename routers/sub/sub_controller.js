@@ -27,6 +27,7 @@ let product = async (req,res)=>{
     let result = await User.findOne({
         where: { product_name: productName }
     })
+    
     console.log(result)
     res.render('./sub/product.html',{
         result:result,
@@ -78,7 +79,7 @@ let buy_check = async (req,res)=>{
     res.render('./sub/buy_check.html',{
         name:req.body.name,
         nation:req.body.nation,
-        Street:req.body.street,
+        Street:req.body.Street,
         City:req.body.City,
         State:req.body.State,
         ZIP:req.body.zip,
