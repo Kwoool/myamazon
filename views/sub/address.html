@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "/css/sub/address.css">
+</head>
+<body>
+    <form action = "/sub/buy_check?productName={{productName}}" method="post">
+        <div class = "buy_wrap wrap">
+            <div class = "address">
+                <div><img src = "/sub/buyimg.gif"></div>
+                <h1>Select a shipping address</h1>
+                <h3>Add a new address</h3>
+                <div>Country/Region</div>
+                <select name = "nation">
+                    <option value="taiwan">taiwan</option>
+                    <option value="korea">korea</option>
+                    <option value="france">france</option>
+                    <option value="china">china</option>
+                </select>
+                <div>Full name (First and Last name)</div>
+                <input type = "text" name = "name">
+                <div>Street address</div>
+                <input type = "text" name = "Street" placeholder = "street address, p.o. box, company name, c/o"><br/>
+                <input type = "text" name = "Street" placeholder = "Apartment, suite, unit, building, floor, etc.">
+                <div>City</div>
+                <input type = "text" name = "City">
+                <div>State / Province / Region</div>
+                <input type = "text" name = "State">
+                <div>ZIP Code</div>
+                <input type = "text" name = "zip">
+                <div>Phone number</div>
+                <input type = "text" name = "phone">
+                <div>Payment method</div>
+                <select name = "card">
+                    <option value="shinhan">shinhan</option>
+                    <option value="paypal">paypal</option>
+                    <option value="bitcoin">bitcoin</option>
+                    <option value="china">china</option>
+                </select><br/>
+                <div>card number</div>
+                <input type = "text" name = "payment"><input type = "text" name = "payment"><input type = "text" name = "payment"><input type = "text" name = "payment"><br/>
+                <input type = "checkbox">Make this my default address
+            </div>
+            <div>
+               <input type = "submit" value = "buy" class = "buy"> 
+            </div>
+        </div>
+    </form>
+</body>
+</html>

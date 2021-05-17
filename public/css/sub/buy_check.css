@@ -1,0 +1,25 @@
+.address, .pay, .product_info>div, .buy, .buy_price, .buy_info{
+    display: inline-block;
+    float: left;
+}
+
+.product_info>div{
+    clear: both;
+
+}
+.wrap{
+    width:100%;
+
+}
+
+.wrap>div>div{
+    width:1200px;
+    margin:0 auto;
+}
+
+.product_info>div>span, .buy_price>div>span, .span{
+    font-size:20px;
+    color:black;
+    font-weight: bold;
+}
+

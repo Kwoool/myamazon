@@ -81,6 +81,12 @@ body{
 }
 #search>input:nth-child(2){
 }
+<<<<<<< HEAD
+.v{
+    width:50vw;
+}
+=======
+>>>>>>> 3811294365f07be2a1406bcb0c2c8df96c9b0aef
 #header_bottum{
     width: 100%;
     height: 40px;
