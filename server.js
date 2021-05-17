@@ -1,6 +1,6 @@
 const express = require('express');
-const {sequelize} = require('./models'); // 객체
-const {User} =require('./models');
+const {sequelize} = require('./models'); 
+const {User} = require('./models');// 객체
 const bodyParser = require('body-parser');
 const app = express();
 const router = require('./routers/index');
