@@ -5,42 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/css/user/user.css">
+    <link rel="stylesheet" href="/css/user/account_success.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
-    
 </head>
 <body>
-    <form action="/main" method = "post">
-        <div class="container">
-            <div class="user_mainimg">
-                <img src="/user/amazon_PNG6.png">
+    <div class="container">
+        <div class="user_mainimg">
+            <img src="/user/amazon_PNG6.png">
+        </div>
+        <div class="account_boarder">
+            <h3>Congratulations!</h3>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Your name</label>
+                <div>
+                    {{userId}}
+                </div>
             </div>
-            <div class="login_boarder">
-                <h3>Sign-In</h3>
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name = "userEmail">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" name = "userPw">
-                </div>
-                <button type="submit" id="submit_btn">Continue</button>
-                <div id="emailHelp" class="form-text">
-                    By continuing, you agree to Amazon's <a href="###">Conditions of Use</a> and <a href="###">Privacy Notice.</a>
-                </div>
-                <div id="login_help">
-                    <a href="###">Need help?</a>
-                </div>    
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Email</label>
+                <div>{{userEmail}}</div>
             </div>
-            <div id="container_text">
-                New to Amazon?
-                <div id="create_account">
-                    <button type="submit">Create your Amazon account</button>
-                </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Password</label>
+                <div>{{userPw}}</div>
+            </div>
+            <div id ="account_text">
+                By creating an account, you agree to Amazon's <br>
+                Conditions of Use and Privacy Notice.
             </div>
         </div>
-    </form>
+    </div>
+   
     <div id="login_footer">
         <div id="footer_container">
             <div id="login_footer_container"> 

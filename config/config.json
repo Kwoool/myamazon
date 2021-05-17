@@ -1,8 +1,8 @@
 {
   "development": {
     "username": "root",
-    "password": "0000",
-    "database": "amazon",
+    "password": "root",
+    "database": "amazon1",
     "host": "127.0.0.1",
     "dialect": "mysql",
     "dateString":"date"

@@ -9,8 +9,8 @@ a{
 
 .container{
     width: 348px;
+    height: 520px;
     padding: 14px 0;
-
 }
 
 .user_mainimg > img{
@@ -21,9 +21,9 @@ a{
 }
 
 .login_boarder{
-    width: auto;
+    width: 348px;
     height: auto;
-    margin-top: 18px;
+    margin: 18px auto 0 auto;
     padding: 20px 26px;
     box-sizing: border-box;
     border: 1px solid #999;
@@ -52,9 +52,7 @@ a{
     font-size: 14px;
     z-index: 3;
     position: relative;
-    overflow: hidden;
 }
-
 
 #create_account > button{
     width:348px;

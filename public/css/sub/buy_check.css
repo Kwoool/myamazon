@@ -1,25 +1,48 @@
-.address, .pay, .product_info>div, .buy, .buy_price, .buy_info{
-    display: inline-block;
-    float: left;
-}
 
-.product_info>div{
-    clear: both;
-
-}
 .wrap{
     width:100%;
-
 }
 
-.wrap>div>div{
+.buy{
     width:1200px;
     margin:0 auto;
 }
 
-.product_info>div>span, .buy_price>div>span, .span{
-    font-size:20px;
+.buy_info, .buy_price, .address, .pay, .product_info>div{
+    display: inline-block;
+    float:left;
+}
+.top{
+    margin-top: 40px;
+    display: inline-block;
+}
+.product_info{
+    clear: both;
+    margin-left: 40px;
+  
+}
+.product_info>div{
+    margin-right: 10px;
+}
+.product_info>div>div{
+    margin-left: 7px;
+    margin-top: 7px;
+}
+.buy_price{
+    line-height: 25px;
+    text-align: center;
+    margin-left: 20px;
+}
+.black{
     color:black;
     font-weight: bold;
+    font-size: 20px;
 }
-
+.red{
+    color:red;
+    font-size: 20px;
+}
+.width{
+    width:240px;
+    height:40px;
+}
