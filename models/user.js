@@ -1,7 +1,6 @@
 const Sequelize = require('sequelize'); // class 
-const moment = require('moment');
 
-module.exports = class User extends Sequelize.Model{
+class User1 extends Sequelize.Model{
     static init(sequelize){
         return super.init({
             userId:{
@@ -21,7 +20,7 @@ module.exports = class User extends Sequelize.Model{
             timestamps:false,
             underscored:false,
             paranoid:false,
-            modelName:'User',
+            modelName:'User1',
             tableName:'account',
             charset:'utf8',
             collate:'utf8_general_ci'
@@ -29,6 +28,46 @@ module.exports = class User extends Sequelize.Model{
     }
 }
 
+
+class Product extends Sequelize.Model{
+    static init(sequelize){
+        return super.init({
+            category:{
+                type:Sequelize.STRING(50),
+            },
+            product_name:{
+                type:Sequelize.STRING(50),
+            },
+            price:{
+                type:Sequelize.INTEGER,
+                allowNull:false,
+            },
+            info:{
+                type:Sequelize.STRING(50),
+            },
+            product_image:{
+                type:Sequelize.STRING(50),
+            },
+            hit:{
+                type:Sequelize.INTEGER, /* number */ 
+            }
+        },{
+            sequelize,
+            timestamps:false,
+            underscored:false,
+            paranoid:false,
+            modelName:'Product',
+            tableName:'product',
+            charset:'utf8',
+            collate:'utf8_general_ci'
+        });
+    }
+}
+
+module.exports = {
+    User1,
+    Product
+}
 /*
     userid
     userpw

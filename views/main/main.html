@@ -17,7 +17,7 @@
       <div id="header_top">
         <a class="a_left" href="/"><img id="logo" src="/main/logo.png"></a>
         <a class="a_left" href="#"><img id="state" src="/main/state.png"></a>
-        <form action="/sub/todaysdeal" name="search" method="post" id="search">
+        <form action="/search" method="get" id="search">
           <select>
             <option>All</option>
             <option>Audivle Books&Originals</option>
@@ -33,7 +33,7 @@
             <option>Beauty&Personal Care</option>
             <option>Books</option>
           </select>
-          <input id="text" type="text">
+          <input id="text" type="text" name="search">
           <input id="go" type="submit" value="go">
         </form>
         <div id="top_right">
@@ -50,7 +50,7 @@
               <a href="/">Change coutry/region.</a>
             </div>
           </span>
-          <span class="margin10">
+          <span id="sign" class="margin10">
             <span class="color_white">Hello,Sign in</span>
             <p class="color_white">Account & lists▼</p>
             <div id="hidden2" class="none">
@@ -103,7 +103,7 @@
         <a class="a_right" href="#">Amazon's response to covid-19</a>
       </div>
       <!-- header end -->
-     
+
       <!-- one_line start -->
       <div id="one_line">
         <div id="one_line_top">
@@ -144,9 +144,9 @@
             </div>
             <div>
               <a href="/sub/todaysdeal"><img
-                src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/October/Fuji_D2_45M_en_US_1x._CB418309979_.jpg">
-            </a>
-              </div>
+                  src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/October/Fuji_D2_45M_en_US_1x._CB418309979_.jpg">
+              </a>
+            </div>
           </div>
 
         </div>
@@ -183,8 +183,11 @@
         <a href="/sub/todaysdeal">see more</a>
         <ul>
           {% for item in book %}
-          <li><a href="/sub/product?productName={{item.product_name}}"><img class="style_one"
-                src="{{item.product_image}}"></a></li>
+          <li>
+            <a href="/sub/product?productName={{item.product_name}}">
+              <img class="style_one" src="{{item.product_image}}">
+            </a>
+          </li>
           {% endfor %}
         </ul>
       </div>
@@ -254,8 +257,13 @@
           </div>
           <ul>
             {% for item in clothes %}
-            <li><a href="/sub/product?productName={{item.product_name}}"><img class="style_one"
-                  src="{{item.product_image}}"></a></li>
+            <li>
+              <a href="/sub/product?productName={{item.product_name}}">
+                <img id="six_img" src="{{item.product_image}}">
+                <p>${{item.price}}</p>
+                <p>{{item.info}}</p>
+              </a>
+            </li>
             {% endfor %}
           </ul>
         </div>
@@ -275,39 +283,40 @@
       <!-- seven_line end -->
       <!-- eighth_line start -->
       <div id="eighth_line">
-        <a href="/sub/todaysdeal"><img id="eighth_line_img"
-            src="https://images-na.ssl-images-amazon.com/images/G/01/ape/static/fallback/US_CENTER_PROMO_BACKUP._CB1578606135_.jpg"></a>
+        <a href="/sub/todaysdeal">
+          <img id="eighth_line_img" src="https://images-na.ssl-images-amazon.com/images/G/01/ape/static/fallback/US_CENTER_PROMO_BACKUP._CB1578606135_.jpg">
+        </a>
       </div>
       <!-- eighth_line end -->
       <!-- nine_line start -->
       <div id="nine_line" class="line">
         <div class="style_box">
           <h2>comfy stykes for her</h2>
-          <a href="/sub/todaysdeal"><img class="style_two"
-            src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_HomeBedding_Single_Cat_1x._SY304_CB418596953_.jpg">
+          <a href="/sub/todaysdeal">
+            <img class="style_two" src="https://images-na.ssl-images-amazon.com/images/G/01/home/Discover/XCM_CUTTLE_1319957_1641526_US_3764438_379x304_1X_es_US._SY304_CB657204649_.jpg">
           </a>
-            <a href="/sub/todaysdeal">see more ></a>
+          <a href="/sub/todaysdeal">see more ></a>
         </div>
         <div class="style_box">
           <h2>comfy stykes for her</h2>
-          <a href="/sub/todaysdeal"><img class="style_two"
-            src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_HomeBedding_Single_Cat_1x._SY304_CB418596953_.jpg">
+          <a href="/sub/todaysdeal">
+            <img class="style_two" src="https://images-na.ssl-images-amazon.com/images/G/01/kindle/journeys/ZmVhMDM4ZmYt/ZmVhMDM4ZmYt-OWJlYmQ1MjUt-w379._SY304_CB412342025_.jpg">
           </a>
-            <a href="/sub/todaysdeal">see more ></a>
+          <a href="/sub/todaysdeal">see more ></a>
         </div>
         <div class="style_box">
           <h2>comfy stykes for her</h2>
-         <a href="/sub/todaysdeal"><img class="style_two"
-            src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_HomeBedding_Single_Cat_1x._SY304_CB418596953_.jpg">
+          <a href="/sub/todaysdeal">
+            <img class="style_two" src="https://images-na.ssl-images-amazon.com/images/G/01/kindle/merch/periodicals/newspapers/Unified_Offer/TWP_UO_Digital_Single_image_card_379x304._SY304_CB418552748_.jpg">
           </a>
-            <a href="/sub/todaysdeal">see more ></a>
+          <a href="/sub/todaysdeal">see more ></a>
         </div>
         <div class="style_box">
           <h2>comfy stykes for her</h2>
-          <a href="/sub/todaysdeal"><img class="style_two"
-            src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_HomeBedding_Single_Cat_1x._SY304_CB418596953_.jpg">
-         </a>
-            <a href="/sub/todaysdeal">see more ></a>
+          <a href="/sub/todaysdeal">
+            <img class="style_two" src="https://images-na.ssl-images-amazon.com/images/G/01/digital/adrive/images/2021/grad/APH_210421_grad-21_desktop_category-card_1x._SY304_CB670177379_.jpg">
+          </a>
+          <a href="/sub/todaysdeal">see more ></a>
         </div>
       </div>
       <!-- nine_line end -->
@@ -315,9 +324,12 @@
       <div id="ten_line" class="line">
         <h2>Most wished for in Video Games</h2>
         <ul>
-          {% for item in electronics %}
-          <li><a href="/sub/product?productName={{item.product_name}}"><img class="style_one"
-                src="{{item.product_image}}"></a></li>
+          {% for item in book %}
+          <li>
+            <a href="/sub/product?productName={{item.product_name}}">
+              <img class="style_one" src="{{item.product_image}}">
+            </a>
+          </li>
           {% endfor %}
         </ul>
       </div>
@@ -326,42 +338,49 @@
       <div id="eleven_line" class="line">
         <h2>Explore eberday essentials</h2>
         <ul>
-          {% for item in electronics %}
-          <li><a href="/sub/product?productName={{item.product_name}}"><img class="style_one"
-                src="{{item.product_image}}"></a></li>
+          {% for item in clothes %}
+          <li>
+            <a href="/sub/product?productName={{item.product_name}}">
+            <img class="style_one" src="{{item.product_image}}">
+          </a>
+        </li>
           {% endfor %}
         </ul>
       </div>
       <!-- eleven_line end -->
-          <!-- tweleve_line start -->
+      <!-- tweleve_line start -->
       <div id="tweleve_line" class="line">
         <div class="style_box">
           <h2>comfy stykes for her</h2>
-          <a href="/sub/todaysdeal"><img class="style_two"
-            src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_StripLighting_379x304_1X_en_US._SY304_CB418597476_.jpg">
+          <a href="/sub/todaysdeal">
+            <img class="style_two"
+              src="https://images-na.ssl-images-amazon.com/images/G/01/kindle/journeys/ZmVhMDM4ZmYt/ZmVhMDM4ZmYt-OWJlYmQ1MjUt-w379._SY304_CB412342025_.jpg">
           </a>
-            <a href="sub/todaysdeal">see more</a>
+          <a href="sub/todaysdeal">see more</a>
         </div>
         <div class="style_box">
           <h2>comfy stykes for her</h2>
-          <a href="/sub/todaysdeal"><img class="style_two"
-            src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_StripLighting_379x304_1X_en_US._SY304_CB418597476_.jpg">
+          <a href="/sub/todaysdeal">
+            <img class="style_two"
+              src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_StripLighting_379x304_1X_en_US._SY304_CB418597476_.jpg">
           </a>
-            <a href="sub/todaysdeal">see more</a>
+          <a href="sub/todaysdeal">see more</a>
         </div>
         <div class="style_box">
           <h2>comfy stykes for her</h2>
-          <a href="/sub/todaysdeal"><img class="style_two"
-            src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_StripLighting_379x304_1X_en_US._SY304_CB418597476_.jpg">
+          <a href="/sub/todaysdeal">
+            <img class="style_two"
+              src="https://images-na.ssl-images-amazon.com/images/G/01/kindle/merch/periodicals/newspapers/Unified_Offer/TWP_UO_Digital_Single_image_card_379x304._SY304_CB418552748_.jpg">
           </a>
-            <a href="sub/todaysdeal">see more</a>
+          <a href="sub/todaysdeal">see more</a>
         </div>
         <div class="style_box">
           <h2>comfy stykes for her</h2>
-          <a href="/sub/todaysdeal"><img class="style_two"
-            src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_StripLighting_379x304_1X_en_US._SY304_CB418597476_.jpg">
+          <a href="/sub/todaysdeal">
+            <img class="style_two"
+              src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_StripLighting_379x304_1X_en_US._SY304_CB418597476_.jpg">
           </a>
-            <a href="sub/todaysdeal">see more</a>
+          <a href="sub/todaysdeal">see more</a>
         </div>
       </div>
       <!-- tweleve_line end -->
@@ -370,7 +389,7 @@
         <h2>Trending styles with 4+ stars</h2>
         <a href="#">shop all</a>
         <ul>
-          {% for item in electronics %}
+          {% for item in book %}
           <li><a href="/sub/product?productName={{item.product_name}}"><img class="style_one"
                 src="{{item.product_image}}"></a></li>
           {% endfor %}
@@ -391,7 +410,9 @@
       <!-- footer start -->
       <div id="footer">
         <div id="footer_top">
-          <a href="#"> <span>Back to top</span></a>
+          <a href="#">
+             <span>Back to top</span>
+            </a>
           <div id="footer_top_top">
             <ul>
               <li><span> Get to Know Us </span></li>
@@ -442,147 +463,147 @@
             <ul>
               <li>
                 <a href="#">Amazon Music</a>
-                <a href="#">Amazon Music</a>
-                <a href="#">Amazon Music</a>
+                <a href="#">Amazon Drive</a>
+                <a href="#">Home Service</a>
+              </li>
+              <li>
+                <a href="#">Amazon</a>
+                <a href="#">Home Service</a>
+                <a href="#">Amazon Drive</a>
               </li>
               <li>
                 <a href="#">Amazon Music</a>
-                <a href="#">Amazon Music</a>
-                <a href="#">Amazon Music</a>
+                <a href="#">Amazon Drive</a>
+                <a href="#">Home Service</a>
+              </li>
+              <li>
+                <a href="#">Amazon</a>
+                <a href="#">Amazon Drive</a>
+                <a href="#">Home Service</a>
               </li>
               <li>
                 <a href="#">Amazon Music</a>
-                <a href="#">Amazon Music</a>
-                <a href="#">Amazon Music</a>
+                <a href="#">Amazon Drive</a>
+                <a href="#">Home Service</a>
+              </li>
+              <li>
+                <a href="#">Amazon</a>
+                <a href="#">Home Service</a>
+                <a href="#">Amazon Drive</a>
               </li>
               <li>
                 <a href="#">Amazon Music</a>
-                <a href="#">Amazon Music</a>
-                <a href="#">Amazon Music</a>
+                <a href="#">Amazon Drive</a>
+                <a href="#">Home Service</a>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href="#">Amazon</a>
+                <a href="#">Amazon Global</a>
+                <a href="#">Amazon Warehouse</a>
               </li>
               <li>
                 <a href="#">Amazon Music</a>
-                <a href="#">Amazon Music</a>
-                <a href="#">Amazon Music</a>
+                <a href="#">Amazon Warehouse</a>
+                <a href="#">Amazon Global</a>
+              </li>
+              <li>
+                <a href="#">Amazon</a>
+                <a href="#">Amazon Global</a>
+                <a href="#">Amazon Warehouse</a>
               </li>
               <li>
                 <a href="#">Amazon Music</a>
-                <a href="#">Amazon Music</a>
-                <a href="#">Amazon Music</a>
+                <a href="#">Amazon Warehouse</a>
+                <a href="#">Amazon Global</a>
+              </li>
+              <li>
+                <a href="#">Amazon</a>
+                <a href="#">Amazon Global</a>
+                <a href="#">Amazon Warehouse</a>
               </li>
               <li>
                 <a href="#">Amazon Music</a>
+                <a href="#">Amazon Warehouse</a>
+                <a href="#">Amazon Global</a>
+              </li>
+              <li>
                 <a href="#">Amazon Music</a>
-                <a href="#">Amazon Music</a>
+                <a href="#">Amazon Global</a>
+                <a href="#">Amazon Warehouse</a>
               </li>
             </ul>
             <ul>
               <li>
                 <a href="#">Amazon Music</a>
+                <a href="#">Amazon Warehouse</a>
+                <a href="#">Amazon Global</a>
+              </li>
+              <li>
+                <a href="#">Amazon</a>
+                <a href="#">Amazon Global</a>
+                <a href="#">Amazon Warehouse</a>
+              </li>
+              <li>
+                <a href="#">Amazon Phone</a>
+                <a href="#">Sell on Amazon</a>
                 <a href="#">Amazon Music</a>
+              </li>
+              <li>
+                <a href="#">Sell on Amazon</a>
+                <a href="#">Amazon Phone</a>
+                <a href="#">Amazon Music</a>
+              </li>
+              <li>
+                <a href="#">Amazon Phone</a>
+                <a href="#">Sell on Amazon</a>
                 <a href="#">Amazon Music</a>
               </li>
               <li>
                 <a href="#">Amazon Music</a>
-                <a href="#">Amazon Music</a>
-                <a href="#">Amazon Music</a>
+                <a href="#">Amazon Phone</a>
+                <a href="#">Sell on Amazon</a>
               </li>
               <li>
                 <a href="#">Amazon Music</a>
-                <a href="#">Amazon Music</a>
-                <a href="#">Amazon Music</a>
-              </li>
-              <li>
-                <a href="#">Amazon Music</a>
-                <a href="#">Amazon Music</a>
-                <a href="#">Amazon Music</a>
-              </li>
-              <li>
-                <a href="#">Amazon Music</a>
-                <a href="#">Amazon Music</a>
-                <a href="#">Amazon Music</a>
-              </li>
-              <li>
-                <a href="#">Amazon Music</a>
-                <a href="#">Amazon Music</a>
-                <a href="#">Amazon Music</a>
-              </li>
-              <li>
-                <a href="#">Amazon Music</a>
-                <a href="#">Amazon Music</a>
-                <a href="#">Amazon Music</a>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <a href="#">Amazon Music</a>
-                <a href="#">Amazon Music</a>
-                <a href="#">Amazon Music</a>
-              </li>
-              <li>
-                <a href="#">Amazon Music</a>
-                <a href="#">Amazon Music</a>
-                <a href="#">Amazon Music</a>
-              </li>
-              <li>
-                <a href="#">Amazon Music</a>
-                <a href="#">Amazon Music</a>
-                <a href="#">Amazon Music</a>
-              </li>
-              <li>
-                <a href="#">Amazon Music</a>
-                <a href="#">Amazon Music</a>
-                <a href="#">Amazon Music</a>
-              </li>
-              <li>
-                <a href="#">Amazon Music</a>
-                <a href="#">Amazon Music</a>
-                <a href="#">Amazon Music</a>
-              </li>
-              <li>
-                <a href="#">Amazon Music</a>
-                <a href="#">Amazon Music</a>
-                <a href="#">Amazon Music</a>
-              </li>
-              <li>
-                <a href="#">Amazon Music</a>
-                <a href="#">Amazon Music</a>
-                <a href="#">Amazon Music</a>
+                <a href="#">Sell on Amazon</a>
+                <a href="#">Amazon Phone</a>
               </li>
             </ul>
             <ul>
               <li>
+                <a href="#">Amazon Phone</a>
+                <a href="#">Sell on Amazon</a>
                 <a href="#">Amazon Music</a>
+              </li>
+              <li>
+                <a href="#">Sell on Amazon</a>
+                <a href="#">Amazon Phone</a>
+                <a href="#">Amazon Music</a>
+              </li>
+              <li>
+                <a href="#">Amazon Phone</a>
+                <a href="#">Sell on Amazon</a>
+                <a href="#">Amazon Music</a>
+              </li>
+              <li>
+                <a href="#">Sell on Amazon</a>
+                <a href="#">Amazon Phone</a>
+                <a href="#">Amazon Music</a>
+              </li>
+              <li>
+                <a href="#"Sell on Amazonc</a>
+                <a href="#">Amazon Music</a>
+                <a href="#">Amazon Music</a>
+                </li>
+              <li>
+                <a href="#">Amazon</a>
                 <a href="#">Amazon Music</a>
                 <a href="#">Amazon Music</a>
               </li>
               <li>
-                <a href="#">Amazon Music</a>
-                <a href="#">Amazon Music</a>
-                <a href="#">Amazon Music</a>
-              </li>
-              <li>
-                <a href="#">Amazon Music</a>
-                <a href="#">Amazon Music</a>
-                <a href="#">Amazon Music</a>
-              </li>
-              <li>
-                <a href="#">Amazon Music</a>
-                <a href="#">Amazon Music</a>
-                <a href="#">Amazon Music</a>
-              </li>
-              <li>
-                <a href="#">Amazon Music</a>
-                <a href="#">Amazon Music</a>
-                <a href="#">Amazon Music</a>
-              </li>
-              <li>
-                <a href="#">Amazon Music</a>
-                <a href="#">Amazon Music</a>
-                <a href="#">Amazon Music</a>
-              </li>
-              <li>
-                <a href="#">Amazon Music</a>
+                <a href="#">Amazon</a>
                 <a href="#">Amazon Music</a>
                 <a href="#">Amazon Music</a>
               </li>
@@ -728,23 +749,38 @@
 
 <script type="text/javascript">
   let layerBtn = document.querySelector('#btn');
-let closeBtn = document.querySelector('.close');
-console.log(closeBtn);
+  let closeBtn = document.querySelector('.close');
+  console.log(closeBtn);
 
-function layerFn(){
+  function layerFn() {
     console.log('hi');
     let popup = document.querySelector('#hidden_bar')
     let type = 'none'; //-----------------------변수 설정할 때 아무 값이 없으면 안 되니까 시작 값 주는 것처럼
     type = (popup.style.display == 'none') ? 'block' : 'none';  //변수는, 하고 if 조건이면 block 아니면 none을 줄여서쓴 것
-    if(popup.style.display == 'none'){
-        type = 'block';
-    }else{
-        type = 'none';
+    if (popup.style.display == 'none') {
+      type = 'block';
+    } else {
+      type = 'none';
     }
     popup.style.display = type;
-}
-//-----------이벤트를 추가한다 이벤트 이름과 함수
-closeBtn.addEventListener('click',layerFn);
+  }
+  //-----------이벤트를 추가한다 이벤트 이름과 함수
+  closeBtn.addEventListener('click', layerFn);
 
-  </script>
+  let signBtn = document.querySelector('#sign');
+  function layerFn2() {
+    let popup = document.querySelector('#hidden2')
+    let type = 'none'; //-----------------------변수 설정할 때 아무 값이 없으면 안 되니까 시작 값 주는 것처럼
+    type = (popup.style.display == 'none') ? 'block' : 'none';  //변수는, 하고 if 조건이면 block 아니면 none을 줄여서쓴 것
+    if (popup.style.display == 'none') {
+      type = 'block';
+    } else {
+      type = 'none';
+    }
+    popup.style.display = type;
+  }
+  //-----------이벤트를 추가한다 이벤트 이름과 함수
+  signBtn.addEventListener('click', layerFn2);
+</script>
+
 </html>
