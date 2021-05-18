@@ -17,7 +17,7 @@
       <div id="header_top">
         <a class="a_left" href="/"><img id="logo" src="/main/logo.png"></a>
         <a class="a_left" href="#"><img id="state" src="/main/state.png"></a>
-        <form action="/sub" method="post" id="search">
+        <form action="/sub/todaysdeal" name="search" method="post" id="search">
           <select>
             <option>All</option>
             <option>Audivle Books&Originals</option>
@@ -33,19 +33,58 @@
             <option>Beauty&Personal Care</option>
             <option>Books</option>
           </select>
-          <input type="text" class = "v">
-          <input type="submit" value="go" >
+          <input id="text" type="text">
+          <input id="go" type="submit" value="go">
         </form>
-        <span>국가</span>
-        <span>
-          <span class="color_white">Hello,Sign in</span>
-          <p class="color_white">Account & lists▼</p>
-        </span>
-        <a class="a_left" href="#">
-          <span class="color_white">Retuns</span>
-          <p class="color_white">& Orders</p>
-        </a>
-        <a class="a_right" href="#"><img src="/main/busket.png"></a>
+        <div id="top_right">
+          <span>
+            <img id="usa"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/285px-Flag_of_the_United_States.svg.png">▽
+            <div id="hidden1" class="none">
+              <input type="radio" value="English - EN">
+              <input type="radio" value="Eapanol - ES">
+              <a href="/">Lean more</a>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/285px-Flag_of_the_United_States.svg.png">
+              <span>You are shopping on Amazon.com.</span>
+              <a href="/">Change coutry/region.</a>
+            </div>
+          </span>
+          <span class="margin10">
+            <span class="color_white">Hello,Sign in</span>
+            <p class="color_white">Account & lists▼</p>
+            <div id="hidden2" class="none">
+              <ul>
+                <li><a href="/user">
+                    <h3>Your List
+                  </a></h3>
+                </li>
+                <li><a href="/user">Create a List</a></li>
+                <li><a href="/user">Find a LIst or Registry</a></li>
+                <li><a href="/user">AmazonSmile Charity Lists</a></li>
+              </ul>
+              <ul>
+                <li><a href="/user">
+                    <h3>Your Account</h3>
+                  </a></li>
+                <li><a href="/user">Account</a></li>
+                <li><a href="/user">Orders</a></li>
+                <li><a href="/user">Recommendations</a></li>
+                <li><a href="/user">Browsing History</a></li>
+                <li><a href="/user">Watchlist</a></li>
+                <li><a href="/user">Video Purchases &Tentals</a></li>
+                <li><a href="/user">Kindle Unlinited</a></li>
+                <li><a href="/user">Content & Devices</a></li>
+                <li><a href="/user">Subscribe & SabeItems</a></li>
+              </ul>
+            </div>
+          </span>
+          <a class="a_left margin10" href="#">
+            <span class="color_white">Retuns</span>
+            <p class="color_white">& Orders</p>
+          </a>
+          <a class="a_right margin10" href="#"><img src="/main/busket.png"></a>
+        </div>
       </div>
       <div id="header_bottum">
         <a href="#">
@@ -67,20 +106,20 @@
       <!-- one_line start -->
       <div id="one_line">
         <div id="one_line_top">
-          <div id="left">〈</div>
-          <div id="right">〉</div>
-          <img
+          <div id="left" onclick="left()">〈</div>
+          <div id="right" onclick="right()">〉</div>
+          <img 
             src="https://images-na.ssl-images-amazon.com/images/G/01/kindle/journeys/MDkzY2E0NmMt/MDkzY2E0NmMt-MWEzMWY1ZWUt-w1500._CB669611386_.jpg">
-          <img
+          <img class="none"
             src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Hero/Fuji_TallHero_45M_v2_1x._CB432458380_.jpg">
-          <img
+          <img class="none"
             src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Hero/Fuji_TallHero_Computers_1x._CB432469755_.jpg">
-          <img
+          <img class="none"
             src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Hero/Fuji_TallHero_Beauty_v2_en_US_1x._CB429089975_.jpg">
-          <img
+          <img class="none"
             src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Hero/Fuji_TallHero_Toys_en_US_1x._CB431858161_.jpg">
-
         </div>
+        
         <div id="one_line_content_middle">
           <div>
             <h2>Find your ideal TV</h2>
@@ -88,7 +127,7 @@
             <a href="#">see more</a>
           </div>
           <div>
-            <h2>Computers & Accessories</h2>
+            <h3>Computers & Accessories</h3>
             <img src="https://m.media-amazon.com/images/I/31I+xrzXP1L._AC_SY240_.jpg">
             <a href="#">shop now</a>
           </div>
@@ -103,7 +142,8 @@
               <a href="#" id="one_middle_a">Sign in securely</a>
             </div>
             <div>
-              <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/October/Fuji_D2_45M_en_US_1x._CB418309979_.jpg">
+              <img
+                src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/October/Fuji_D2_45M_en_US_1x._CB418309979_.jpg">
             </div>
           </div>
 
@@ -140,11 +180,9 @@
         <h2>Related to items you've viewed</h2>
         <a href="#">see more</a>
         <ul>
-        <li><img class="style_one" src="{{result[0].product_image}}"></li>
-        <li><img class="style_one" src="{{result[0].product_image}}"></li>
-        <li><img class="style_one" src="{{result[0].product_image}}"></li>
-        <li><img class="style_one" src="{{result[0].product_image}}"></li>
-        <li><img class="style_one" src="{{result[0].product_image}}"></li>
+          {% for item in book %}
+          <li><a href="/sub/product?productName={{item.product_name}}"><img class="style_one" src="{{item.product_image}}"></a></li>
+          {% endfor %}
         </ul>
       </div>
       <!-- tow_line two -->
@@ -153,11 +191,9 @@
         <h2>Inspired by your shopping trends in Home,Garden & Tools</h2>
         <a href="#"></a>
         <ul>
-          <li><img class="style_one" src="/sub/product2.jpg"></li>
-          <li><img class="style_one" src="/sub/product2.jpg"></li>
-          <li><img class="style_one" src="/sub/product2.jpg"></li>
-          <li><img class="style_one" src="/sub/product2.jpg"></li>
-          <li><img class="style_one" src="/sub/product2.jpg"></li>
+          {% for item in movie %}
+          <li><a href="/sub/product?productName={{item.product_name}}"><img class="style_one" src="{{item.product_image}}"></a></li>
+          {% endfor %}
         </ul>
       </div>
       <!-- three_line end -->
@@ -165,22 +201,26 @@
       <div id="four_line" class="line">
         <div class="style_box">
           <h2>comfy stykes for her</h2>
-          <img class="style_two" src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Laptops_379x304_1X_en_US._SY304_CB418608471_.jpg">
+          <img class="style_two"
+            src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Laptops_379x304_1X_en_US._SY304_CB418608471_.jpg">
           <a href="#">see more</a>
         </div>
         <div class="style_box">
           <h2>comfy stykes for her</h2>
-          <img class="style_two" src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_HomeBedding_Single_Cat_1x._SY304_CB418596953_.jpg">
+          <img class="style_two"
+            src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_HomeBedding_Single_Cat_1x._SY304_CB418596953_.jpg">
           <a href="#">see more</a>https
         </div>
         <div class="style_box">
           <h2>comfy stykes for her</h2>
-          <img class="style_two" src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_StripLighting_379x304_1X_en_US._SY304_CB418597476_.jpg">
+          <img class="style_two"
+            src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_StripLighting_379x304_1X_en_US._SY304_CB418597476_.jpg">
           <a href="#">see more</a>
         </div>
         <div class="style_box">
           <h2>comfy stykes for her</h2>
-          <img class="style_two" src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Laptops_379x304_1X_en_US._SY304_CB418608471_.jpg">
+          <img class="style_two"
+            src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Laptops_379x304_1X_en_US._SY304_CB418608471_.jpg">
           <a href="#">see more</a>
         </div>
       </div>
@@ -189,11 +229,9 @@
       <div id="five_line" class="line">
         <h2>Recommended for you from our brands</h2>
         <ul>
-          <li><img class="style_one" src="/sub/product3.jpg"></li>
-          <li><img class="style_one" src="/sub/product3.jpg"></li>
-          <li><img class="style_one" src="/sub/product3.jpg"></li>
-          <li><img class="style_one" src="/sub/product3.jpg"></li>
-          <li><img class="style_one" src="/sub/product3.jpg"></li>
+          {% for item in music %}
+          <li> <a href="/sub/product?productName={{item.product_name}}"><img class="style_one" src="{{item.product_image}}"></a></li>
+          {% endfor %}
         </ul>
       </div>
       <!-- five_line end -->
@@ -202,13 +240,13 @@
         <h2>Shop livestreams</h2>
         <a href="#"> see more from Amazon Live</a>
         <div>
-          <div id="six_line_movie">영상</div>
+          <div id="six_line_movie"><img
+              src="https://m.media-amazon.com/images/S/atv-aps-images/encoded/C2A2_AOM/US/en_US/COVER_ART/CLEAN/AKEEMSEMMISTARING._RI_V2_TTW_AC_SL792_.jpg">
+          </div>
           <ul>
-            <li><img class="style_one" src="/sub/product3.jpg"></li>
-            <li><img class="style_one" src="/sub/product3.jpg"></li>
-            <li><img class="style_one" src="/sub/product3.jpg"></li>
-            <li><img class="style_one" src="/sub/product3.jpg"></li>
-            <li><img class="style_one" src="/sub/product3.jpg"></li>
+            {% for item in clothes %}
+            <li><a href="/sub/product?productName={{item.product_name}}"><img class="style_one" src="{{item.product_image}}"></a></li>
+            {% endfor %}
           </ul>
         </div>
       </div>
@@ -218,39 +256,42 @@
         <h2>4+ star gifts for any occarion</h2>
         <a href="#">shop all</a>
         <ul>
-          <li><img class="style_one" src="/sub/product4.jpg"></li>
-          <li><img class="style_one" src="/sub/product4.jpg"></li>
-          <li><img class="style_one" src="/sub/product4.jpg"></li>
-          <li><img class="style_one" src="/sub/product4.jpg"></li>
-          <li><img class="style_one" src="/sub/product4.jpg"></li>
+          {% for item in electronics %}
+          <li><a href="/sub/product?productName={{item.product_name}}"><img class="style_one" src="{{item.product_image}}"></a></li>
+          {% endfor %}
         </ul>
       </div>
       <!-- seven_line end -->
       <!-- eighth_line start -->
-      <div id="eighth_line" class="line">
-        <a href="#"><img id="eighth_line_img" src="../../imige/advertise.png"></a>
+      <div id="eighth_line">
+        <a href="#"><img id="eighth_line_img"
+            src="https://images-na.ssl-images-amazon.com/images/G/01/ape/static/fallback/US_CENTER_PROMO_BACKUP._CB1578606135_.jpg"></a>
       </div>
       <!-- eighth_line end -->
       <!-- nine_line start -->
       <div id="nine_line" class="line">
         <div class="style_box">
           <h2>comfy stykes for her</h2>
-          <img class="style_two" src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_HomeBedding_Single_Cat_1x._SY304_CB418596953_.jpg">
+          <img class="style_two"
+            src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_HomeBedding_Single_Cat_1x._SY304_CB418596953_.jpg">
           <a href="#">see more</a>
         </div>
         <div class="style_box">
           <h2>comfy stykes for her</h2>
-          <img class="style_two" src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_HomeBedding_Single_Cat_1x._SY304_CB418596953_.jpg">
+          <img class="style_two"
+            src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_HomeBedding_Single_Cat_1x._SY304_CB418596953_.jpg">
           <a href="#">see more</a>
         </div>
         <div class="style_box">
           <h2>comfy stykes for her</h2>
-          <img class="style_two" src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_HomeBedding_Single_Cat_1x._SY304_CB418596953_.jpg">
+          <img class="style_two"
+            src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_HomeBedding_Single_Cat_1x._SY304_CB418596953_.jpg">
           <a href="#">see more</a>
         </div>
         <div class="style_box">
           <h2>comfy stykes for her</h2>
-          <img class="style_two" src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_HomeBedding_Single_Cat_1x._SY304_CB418596953_.jpg">
+          <img class="style_two"
+            src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_HomeBedding_Single_Cat_1x._SY304_CB418596953_.jpg">
           <a href="#">see more</a>
         </div>
       </div>
@@ -259,11 +300,9 @@
       <div id="ten_line" class="line">
         <h2>Most wished for in Video Games</h2>
         <ul>
-          <li><img class="style_one" src="/sub/product5.jpg"></li>
-          <li><img class="style_one" src="/sub/product5.jpg"></li>
-          <li><img class="style_one" src="/sub/product5.jpg"></li>
-          <li><img class="style_one" src="/sub/product5.jpg"></li>
-          <li><img class="style_one" src="/sub/product5.jpg"></li>
+          {% for item in electronics %}
+          <li><a href="/sub/product?productName={{item.product_name}}"><img class="style_one" src="{{item.product_image}}"></a></li>
+          {% endfor %}
         </ul>
       </div>
       <!-- ten_line end -->
@@ -271,32 +310,34 @@
       <div id="eleven_line" class="line">
         <h2>Explore eberday essentials</h2>
         <ul>
-          <li><img class="style_one" src="/sub/product1.jpg"></li>
-          <li><img class="style_one" src="/sub/product1.jpg"></li>
-          <li><img class="style_one" src="/sub/product1.jpg"></li>
-          <li><img class="style_one" src="/sub/product1.jpg"></li>
-          <li><img class="style_one" src="/sub/product1.jpg"></li>
+          {% for item in electronics %}
+          <li><a href="/sub/product?productName={{item.product_name}}"><img class="style_one" src="{{item.product_image}}"></a></li>
+          {% endfor %}
         </ul>
       </div>
       <div id="tweleve_line" class="line">
         <div class="style_box">
           <h2>comfy stykes for her</h2>
-          <img class="style_two" src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_StripLighting_379x304_1X_en_US._SY304_CB418597476_.jpg">
+          <img class="style_two"
+            src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_StripLighting_379x304_1X_en_US._SY304_CB418597476_.jpg">
           <a href="#">see more</a>
         </div>
         <div class="style_box">
           <h2>comfy stykes for her</h2>
-          <img class="style_two" src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_StripLighting_379x304_1X_en_US._SY304_CB418597476_.jpg">
+          <img class="style_two"
+            src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_StripLighting_379x304_1X_en_US._SY304_CB418597476_.jpg">
           <a href="#">see more</a>
         </div>
         <div class="style_box">
           <h2>comfy stykes for her</h2>
-          <img class="style_two" src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_StripLighting_379x304_1X_en_US._SY304_CB418597476_.jpg">
+          <img class="style_two"
+            src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_StripLighting_379x304_1X_en_US._SY304_CB418597476_.jpg">
           <a href="#">see more</a>
         </div>
         <div class="style_box">
           <h2>comfy stykes for her</h2>
-          <img class="style_two" src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_StripLighting_379x304_1X_en_US._SY304_CB418597476_.jpg">
+          <img class="style_two"
+            src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_StripLighting_379x304_1X_en_US._SY304_CB418597476_.jpg">
           <a href="#">see more</a>
         </div>
       </div>
@@ -306,11 +347,9 @@
         <h2>Trending styles with 4+ stars</h2>
         <a href="#">shop all</a>
         <ul>
-          <li><img class="style_one" src="/sub/product2.jpg"></li>
-          <li><img class="style_one" src="/sub/product2.jpg"></li>
-          <li><img class="style_one" src="/sub/product2.jpg"></li>
-          <li><img class="style_one" src="/sub/product2.jpg"></li>
-          <li><img class="style_one" src="/sub/product2.jpg"></li>
+          {% for item in electronics %}
+          <li><a href="/sub/product?productName={{item.product_name}}"><img class="style_one" src="{{item.product_image}}"></a></li>
+          {% endfor %}
         </ul>
       </div>
       <!-- thirteenth_line end -->
@@ -318,11 +357,9 @@
       <div id="fourteen_line" class="line">
         <h2>Related to items you viewed</h2>
         <ul>
-          <li><img class="style_one" src="/sub/product3.jpg"></li>
-          <li><img class="style_one" src="/sub/product3.jpg"></li>
-          <li><img class="style_one" src="/sub/product3.jpg"></li>
-          <li><img class="style_one" src="/sub/product3.jpg"></li>
-          <li><img class="style_one" src="/sub/product3.jpg"></li>
+          {% for item in electronics %}
+          <li><a href="/sub/product?productName={{item.product_name}}"><img class="style_one" src="{{item.product_image}}"></a></li>
+          {% endfor %}
         </ul>
       </div>
       <!-- fourteen_line end -->
@@ -535,8 +572,132 @@
           </div>
         </div>
       </div>
+      <div id="hidden_bar" class="none">
+        <ul>
+          <li>
+            <h2> Hello,jin </h2>
+          </li>
+        </ul>
+        <ul class="hiddem_ul">
+          <li><a href="/">
+              <h3> Trnding</h3>
+            </a></li>
+          <li>
+            <a href="/"><span> Best Sellers</span>
+              <span>></span></a>
+          </li>
+          <li>
+            <a href="/"><span> New Teleases</span>
+              <span>></span></a>
+          </li>
+          <li>
+            <a href="/"><span> Movers & Shakers</span>
+              <span>></span></a>
+          </li>
+        </ul>
+        <ul class="hiddem_ul">
+          <li><a href="/">
+              <h3> Digital Content & Debices</h3>
+            </a></li>
+          <li>
+            <a href="/"><span> Prine Video</span>
+              <span>></span></a>
+          </li>
+          <li>
+            <a href="/"><span> Amazon Music</span>
+              <span>></span></a>
+          </li>
+          <li>
+            <a href="/"><span> Echo &Aexa</span>
+              <span>></span></a>
+          </li>
+          <li>
+            <a href="/"><span> Fire Tablets</span>
+              <span>></span></a>
+          </li>
+          <li>
+            <a href="/"><span> fire TV</span>
+              <span>></span></a>
+          </li>
+          <li>
+            <a href="/"><span> Kindle E-readers &Books</span>
+              <span>></span></a>
+          </li>
+        </ul>
+        <ul class="hiddem_ul">
+          <li><a href="/">
+              <h3> Shop By Department</h3>
+            </a></li>
+          <li>
+            <a href="/"><span> Clothing, ShoesmJewelry & Watches</span>
+              <span>></span></a>
+          </li>
+          <li>
+            <a href="/"><span> Books</span>
+              <span>></span></a>
+          </li>
+          <li>
+            <a href="/"><span> Movies,Music & Games</span>
+              <span>></span></a>
+          </li>
+          <li>
+            <a href="/"><span> Electronics</span>
+              <span>></span></a>
+          </li>
+          <li>
+            <a href="/"><span> see All ∨</span></a>
+          </li>
+        </ul>
+        <ul class="hiddem_ul">
+          <li><a href="/">
+              <h3> Programs & Features</h3>
+            </a></li>
+          <li>
+            <a href="/"><span> Whole Foods Market</span>
+              <span>></span></a>
+          </li>
+          <li>
+            <a href="/"><span> Amazon Phamacy</span>
+              <span>></span></a>
+          </li>
+          <li>
+            <a href="/"><span> Amazon Physical Stores</span>
+              <span>></span></a>
+          </li>
+          <li>
+            <a href="/"><span> Subscribe & Save</span>
+              <span>></span></a>
+          </li>
+          <li>
+            <a href="/"><span> See All ∨</span></a>
+          </li>
+        </ul>
+        <ul class="hiddem_ul">
+          <li><a href="/">
+              <h3>Help&Sttings</h3>
+            </a></li>
+          <li>
+            <a href="/"><span> Your Account</span>
+              <span>></span></a>
+          </li>
+          <li>
+            <a href="/"><span> English</span>
+              <span>></span></a>
+          </li>
+          <li>
+            <a href="/"><span> United States</span>
+              <span>></span></a>
+          </li>
+          <li>
+            <a href="/"><span> Customer Service</span>
+              <span>></span></a>
+          </li>
+          <li>
+            <a href="/"><span> Sign Out</span></a>
+          </li>
+        </ul>
+      </div>
     </div>
-
 </body>
 
 </html>
