@@ -1,11 +1,9 @@
-const {User} = require('../../models/index');
-
+const { User, Product } = require('../../models');
 
 let today = async (req,res)=>{
-    let result = await User.findAll({
+    let result = await Product.findAll({
         where: { category: "movie" }
     })
-    console.log(result)
     
     res.render('./sub/TodaysDeals.html',{
         result:result,
@@ -24,15 +22,13 @@ let product = async (req,res)=>{
 
     let productName = req.query.productName
 
-    let result = await User.findOne({
+    let result = await Product.findOne({
         where: { product_name: productName }
     })
     
-    console.log(result)
     res.render('./sub/product.html',{
         result:result,
     })
-    console.log(result)
 }
 
 let registry = (req,res)=>{
@@ -55,7 +51,7 @@ let buy_check2 = async (req,res)=>{
     let productName = req.query.productName
 
     console.log(productName)   
-    let result = await User.findOne({
+    let result = await Product.findOne({
         where: { product_name: productName }
     });
 
@@ -69,10 +65,8 @@ let buy_check2 = async (req,res)=>{
 let buy_check = async (req,res)=>{
 
     let productName = req.query.productName
-    let product_Name = req.body.product_name
 
-    console.log(productName)   
-    let result = await User.findOne({
+    let result = await Product.findOne({
         where: { product_name: productName }
     });
 

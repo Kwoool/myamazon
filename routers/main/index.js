@@ -4,6 +4,6 @@ const controller = require('./main_controller')
 
 console.log(controller);
 
-router.use('/main',controller.main);
+router.use('/',controller.main);
 
 module.exports = router;
