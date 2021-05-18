@@ -18,5 +18,6 @@ let main = async (req,res)=>{
     // });
     res.render('./main/main.html'); 
 }
+
 // ,{movie,book,music,clothes,electronics,}
 module.exports.main = main; 

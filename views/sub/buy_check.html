@@ -31,17 +31,21 @@
                         Cardname : {{card}}<br/>
                         Cardnumber : {{payment}}<br/>
                     </ul>
-                    <a href = "/sub/address?productName={{productName}}"><input type = "button" value = "address/payment method" class = "top"></a><br/>
+                    <a href = "/sub/address?productName={{product_name}}"><input type = "button" value = "address/payment method" class = "top"></a><br/>
                 </div>
                 <div class = "product_info">
-                    <div>
+                    <div class = "top2">
+                        <span class = "pimg"><img src = "{{product_image}}"></span><br/>
                         <span class = "black">product_name : {{product_name}}</span><br/>
                         <span class = "red">product_cost : {{product_cost}}$</span>&<a href = "">FREE Returns</a>
                         <div>Quantity: 1</div>
                         <div>sold by:Bosidin</div>
-                        <button>Add gift options</button>                    
+                        <button>Add gift options</button>  
+                        <div>
+                            Item arrives in packaging that shows what<br/>’s inside and can’t be hidden. If this is a gift<br/>, consider shipping to a different address.
+                        </div>                  
                     </div>
-                    <div>
+                    <div class = "div4">
                         <h2>Choosse a delivery option:</h2>
                         <input type = "radio">Friday, May 21 - Sunday, May 23
                         FREE Shipping<br/>
@@ -54,16 +58,20 @@
                 </div>
             </div>
             <div class = "buy_price">
-                <a href = "/main"><input type = "button" value = "Place your order" class = "width"></a><br/>
-                    By placing your order, you agree to Amazon's<br/> privacy notice and conditions of use.<br/>total cost : <span class = "red">{{product_cost}}$</span>
-                    <br/>Amazon Currency Converter is<br/> Enabled.  Learn more<br/>
-                    PAYMENT TOTAL : <span class = "span red">{{product_cost}}$</span><br/>
+                <div class = "div3 div2">
+                    <a href = "/main"><input type = "button" value = "Place your order" class = "width"></a><br/>
+                        By placing your order, you agree to Amazon's<br/> privacy notice and conditions of use.<br/>total cost : <span class = "red">{{product_cost}}$</span>
+                        <br/>Amazon Currency Converter is<br/> Enabled.  Learn more<br/>
+                    <span class = "span red">PAYMENT TOTAL : {{product_cost}}$</span><br/>
+                </div>    
+                <div>
                     Applicable Exchange Rate<br/>
                     1 USD = 1151.0672249428 KRW<br/>
                     (includes all Amazon fees and charges)<br/>
                     Qualifying offers:<br/>
                     Free Shipping<br/>
-                    How are shipping costs calculated?<br/>
+                    How are shipping costs calculated?<br/> 
+                </div>
             </div>
         </div>
     </div>

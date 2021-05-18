@@ -19,6 +19,5 @@ const upload = multer({
 router.get('/user',controller.user);
 router.get('/account',controller.account);
 router.post('/account_success',controller.account_success);
-router.post('/main',controller.login_success);
 
 module.exports = router;

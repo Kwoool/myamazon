@@ -1,7 +1,3 @@
-create database amazon;
-
-use amazon;
-
 INSERT INTO product (category, product_name, price, info, product_image, hit ) VALUES ( 'book', 'Killing the Mob The Fight Against Organized Crime in America', 18, 'n the tenth book in the multimillion-selling Killing series', '/sub/product1.jpg', 0);
 INSERT INTO product (category, product_name, price, info, product_image, hit ) VALUES ( 'book', 'DBT For Dummies', 24, 'Dialectical Behavior Therapy (DBT) is one of the', '/sub/product3.jpg', 0);
 INSERT INTO product (category, product_name, price, info, product_image, hit ) VALUES ( 'book', 'Brown Bear, Brown Bear, What Do You See?', 5, ' big happy frog, a plump purple cat', '/sub/product1.jpg', 0);
@@ -36,17 +32,16 @@ INSERT INTO product (category, product_name, price, info, product_image, hit ) V
 INSERT INTO product (category, product_name, price, info, product_image, hit ) VALUES ( 'music', 'Holy Diver Live', 12, ' think of love. Big, big love','/sub/product3.jpg', 0);
 INSERT INTO product (category, product_name, price, info, product_image, hit ) VALUES ( 'music', 'Original Album Series', 28, 'American nights with coffees and beers,','/sub/product3.jpg', 0);
 
-INSERT INTO product (category, product_name, price, info, product_image, hit ) VALUES ( 'clothes', 'Dinosaur Pajamas', 21, 'Dinosaurs Design- Most boys are interested''/sub/product4.jpg', 0);
-INSERT INTO product (category, product_name, price, info, product_image, hit ) VALUES ( 'clothes', 'Boys Girls Water Shoes', 18, 'At STQ,we believe in our products.','/sub/product4.jpg', 0);
-INSERT INTO product (category, product_name, price, info, product_image, hit ) VALUES ( 'clothes', 'Fish Boys Pajamas ', 26, 'mported,soft comfortable,','/sub/product1.jpg', 0);
-INSERT INTO product (category, product_name, price, info, product_image, hit ) VALUES ( 'clothes', 'Long Sleeve Pajama', 20, 'Machine wash or hand wash available,inside-out','/sub/product4.jpg', 0);
-INSERT INTO product (category, product_name, price, info, product_image, hit ) VALUES ( 'clothes', 'Thermal Shirt', 14, 'Womens long sleeve crew neck tagles','/sub/product1.jpg', 0);
-INSERT INTO product (category, product_name, price, info, product_image, hit ) VALUES ( 'clothes', 'Long Sleeve Flannel Plaid', 19, 'Slim fit, button up long sleeves','/sub/product4.jpg', 0);
-INSERT INTO product (category, product_name, price, info, product_image, hit ) VALUES ( 'clothes', 'Womens Mckay Winter Boot', 145, 'Pretreated to repel moisture and stains','/sub/product4.jpg', 0);
-INSERT INTO product (category, product_name, price, info, product_image, hit ) VALUES ( 'clothes', 'Classic Zip Mini Ankle Boot', 160, 'Treadlite by UGG outsole for comfort.','/sub/product3.jpg', 0);
-INSERT INTO product (category, product_name, price, info, product_image, hit ) VALUES ( 'clothes', 'Slim Mini Pencil Skirt', 120, '70% Polyurethane, 30% Cotton','/sub/product4.jpg', 0);
-
-INSERT INTO product (category, product_name, price, info, product_image, hit ) VALUES ( 'clothes', 'Knee Pencil Skirt', 28, 'The sequin fabric will be changed to different COLOR ','/sub/product3.jpg', 0);
+INSERT INTO product (category, product_name, price, info, product_image, hit ) VALUES ( 'clothes', 'Dinosaur Pajamas', 21, 'Dinosaurs Design- Most boys are interested''/sub/clothes1.jpg', 0);
+INSERT INTO product (category, product_name, price, info, product_image, hit ) VALUES ( 'clothes', 'Boys Girls Water Shoes', 18, 'At STQ,we believe in our products.','/sub/clothes2.jpg', 0);
+INSERT INTO product (category, product_name, price, info, product_image, hit ) VALUES ( 'clothes', 'Fish Boys Pajamas ', 26, 'mported,soft comfortable,','/sub/clothes3.jpg', 0);
+INSERT INTO product (category, product_name, price, info, product_image, hit ) VALUES ( 'clothes', 'Long Sleeve Pajama', 20, 'Machine wash or hand wash available,inside-out','/sub/clothes4.jpg', 0);
+INSERT INTO product (category, product_name, price, info, product_image, hit ) VALUES ( 'clothes', 'Thermal Shirt', 14, 'Womens long sleeve crew neck tagles','/sub/clothes5.jpg', 0);
+INSERT INTO product (category, product_name, price, info, product_image, hit ) VALUES ( 'clothes', 'Long Sleeve Flannel Plaid', 19, 'Slim fit, button up long sleeves','/sub/clothes6.jpg', 0);
+INSERT INTO product (category, product_name, price, info, product_image, hit ) VALUES ( 'clothes', 'Womens Mckay Winter Boot', 145, 'Pretreated to repel moisture and stains','/sub/clothes1.jpg', 0);
+INSERT INTO product (category, product_name, price, info, product_image, hit ) VALUES ( 'clothes', 'Classic Zip Mini Ankle Boot', 160, 'Treadlite by UGG outsole for comfort.','/sub/clothes2.jpg', 0);
+INSERT INTO product (category, product_name, price, info, product_image, hit ) VALUES ( 'clothes', 'Slim Mini Pencil Skirt', 120, '70% Polyurethane, 30% Cotton','/sub/clothes3.jpg', 0);
+INSERT INTO product (category, product_name, price, info, product_image, hit ) VALUES ( 'clothes', 'Knee Pencil Skirt', 28, 'The sequin fabric will be changed to different COLOR ','/sub/clothes4.jpg', 0);
 INSERT INTO product (category, product_name, price, info, product_image, hit ) VALUES ( 'clothes', 'Knee Pencil Skirt', 28, 'The sequin fabric will be changed to different COLOR ','/sub/product4.jpg', 0);
 
 INSERT INTO product (category, product_name, price, info, product_image, hit ) VALUES ( 'electronics', 'Monocular Telescope', 50, '10X magnification and 60mm object lens', '/sub/product3.jpg', 0);
