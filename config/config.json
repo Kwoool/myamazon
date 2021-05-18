@@ -1,8 +1,8 @@
 {
   "development": {
     "username": "root",
-    "password": "tncjs0810!",
-    "database": "amazon1",
+    "password": "0000",
+    "database": "amazon",
     "host": "127.0.0.1",
     "dialect": "mysql",
     "dateString":"date"

@@ -1,0 +1,23 @@
+<button id = "btn">레이어팝업</button>
+    <div id = "layer_popup_wrap">
+        <div id = "layer_popup">
+            <span class = "close">닫기버튼</span>
+        </div>
+    </div>
+    <script type = "text/javascript">
+    let layerBtn = document.querySelector('#btn');
+    let closeBtn = document.querySelector('.close');
+    layerBtn.addEventListener('click',layerFn);-----------이벤트를 추가한다 이벤트 이름과 함수
+    closeBtn.addEventListener('click',layerFn);
+    function layerFn(){
+        let popup = document.querySelector('#layer_popup_wrap')
+        let type = 'none'; -----------------------변수 설정할 때 아무 값이 없으면 안 되니까 시작 값 주는 것처럼
+        type = (popup.style.display == 'none') ? 'block' : 'none';  변수는, 하고 if 조건이면 block 아니면 none을 줄여서
+쓴 것
+        if(popup.style.display == 'none'){
+            type = 'block';
+        }else{
+            type = 'none';
+        }
+        popup.style.display = type;
+    }

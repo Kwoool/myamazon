@@ -309,7 +309,7 @@ body{
     display: inline-block;
     float: left;
 }
-#one_line_content_middle>div>img{
+#one_line_content_middle>div>a>img{
     width: 300px;
     height: 300px;
     margin: 10px 0;
@@ -356,7 +356,7 @@ body{
     display: inline-block;
     float: left;
 }
-#one_line_content_bottum>div>img{
+#one_line_content_bottum>div>a>img{
     width: 330px;
     height: 300px;
     margin: 10px 0;
@@ -405,7 +405,7 @@ body{
     float: left;
     margin: 0 10px;
 }
-#six_line_movie>img{
+#six_line_movie>a>img{
     width: 500px;
     height: 280px;
 }
@@ -548,12 +548,19 @@ body{
 /* hiddenbar */
 #hidden_bar{
     width: 350px;
-    height: 100%;
+    height: 6500px;
     position: absolute;
     left: 0;
     top: 0;
     z-index: 10;
     background: #ffffff;
+}
+#name{
+    display: inline-block;
+}
+.close{
+    display: inline-block;
+    float: right;
 }
 #hidden_bar>ul{
     padding: 10px 20px;

@@ -27,7 +27,7 @@ app.use(session({
 }))
 app.use(bodyParser.urlencoded({extended:false}));
 
-sequelize.sync({ force:true, })
+sequelize.sync({ force:false, })
 .then(()=>{
     console.log('접속 성공')
 })

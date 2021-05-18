@@ -1,7 +1,7 @@
 
-        var gg = document.querySelector("#left");
-        let a = 0;
-        let b = 1;
+var gg = document.querySelector("#left");
+let a = 0;
+let b = 1;
 function left(){
     let img = document.querySelectorAll("#one_line_top>img");
     if(a == img.length){
@@ -26,11 +26,11 @@ function left(){
 }
 function right(){
     let img = document.querySelectorAll("#one_line_top>img");
-    if(a == img.length){
-        a = 0;
+    if(a == -1){
+        a = img.length - 1;
     }
-    if(b == img.length){
-        b = 0;
+    if(b == -1){
+        b = img.length - 1;
     }
     for(i=0; i<img.length; i++){
         if(i == -1){
@@ -49,3 +49,4 @@ function right(){
     a--;
     b--;
 }
+
