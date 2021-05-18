@@ -20,7 +20,6 @@ let account_success = async (req,res)=>{
        userId:userId,
        userEmail:userEmail,
        userPw:userPw,
-        
     })
 }
 
