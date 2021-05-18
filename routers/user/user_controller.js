@@ -50,20 +50,27 @@ let log_check = async (req,res)=> {
             userPw:userPw,
         }
     })
-    let username = result.dataValues.userId;
-
+    let userid = result.dataValues.userId;
     if(result == null){
         res.redirect('/user/user?flag=0');
     }else{
         req.session.userEmail = userEmail;
-        req.session.username = username;
+        req.session.uid = userid;
         req.session.isLogin = true;
         req.session.save(() => {
-            res.redirect('/main'); 
+            res.redirect('/'); 
         })
     }
 }
 
+let logout = (req,res)=>{
+    delete req.session.isLogin;
+    delete req.session.uid;
+
+    req.session.save(()=>{
+        res.redirect('/');
+    })
+}
 
 module.exports ={ 
     user,
@@ -71,4 +78,5 @@ module.exports ={
     account_success,
     login_success,
     log_check,
+    logout
 }; 

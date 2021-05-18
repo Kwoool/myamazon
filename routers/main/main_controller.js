@@ -18,7 +18,8 @@ let main = async (req,res)=>{
     let electronics = await Product.findAll({
         where:{category:'electronics'}
     });
-    res.render('./main/main.html',{movie,book,music,clothes,electronics,}); 
+    res.render('./main/main.html',{movie,book,music,clothes,electronics,userid:req.session.uid,
+        isLogin:req.session.isLogin}); 
 }
 
 let search=async(req,res)=>{
@@ -35,5 +36,5 @@ let search=async(req,res)=>{
 
 module.exports= {
     main,
-    search,
+    search
 }; 

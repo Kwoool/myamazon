@@ -5,5 +5,5 @@ const controller = require('./main_controller')
 console.log(controller);
 
 router.get('/search',controller.search);
-router.use('/',controller.main);
+router.get('/',controller.main);
 module.exports = router;

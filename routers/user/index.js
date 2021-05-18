@@ -18,6 +18,7 @@ const upload = multer({
 
 router.get('/user',controller.user);
 router.get('/account',controller.account);
+router.get('/logout',controller.logout);
 router.post('/account_success',controller.account_success);
 router.post('/main',controller.login_success);
 router.post('/log_check',controller.log_check);

@@ -1,7 +1,3 @@
-create database amazon;
-
-use amazon;
-
 INSERT INTO product (category, product_name, price, info, product_image, hit ) VALUES ( 'book', 'Killing the Mob The Fight Against Organized Crime in America', 18, 'n the tenth book in the multimillion-selling Killing series', '/sub/book1.jpg', 0);
 INSERT INTO product (category, product_name, price, info, product_image, hit ) VALUES ( 'book', 'DBT For Dummies', 24, 'Dialectical Behavior Therapy (DBT) is one of the', '/sub/book2.jpg', 0);
 INSERT INTO product (category, product_name, price, info, product_image, hit ) VALUES ( 'book', 'Brown Bear, Brown Bear, What Do You See?', 5, ' big happy frog, a plump purple cat', '/sub/book3.png', 0);

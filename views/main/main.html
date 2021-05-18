@@ -55,7 +55,9 @@
             </div>
           </span>
           <span id="sign" class="margin10">
-            <span class="color_white">Hello,Sign in</span>
+            {% if isLogin %}
+            <span class="color_white"><a href="/user/logout">로그아웃</a>Hello,Sign in{{userid}}</span>
+            {% endif %}
             <p class="color_white">Account & lists▼</p>
             <div id="hidden2" class="none">
               <ul>
@@ -597,7 +599,7 @@
                 <a href="#">Amazon Music</a>
               </li>
               <li>
-                <a href="#"Sell on Amazonc</a>
+                <a href="#">Sell on Amazonc</a>
                 <a href="#">Amazon Music</a>
                 <a href="#">Amazon Music</a>
                 </li>

@@ -1,0 +1,94 @@
+{% if isLogin %}
+{{userEmail}}
+{{username}}
+{% endif %}
+<!-- header start -->
+<div id="header">
+  <div id="header_top">
+    <a class="a_left" href="/"><img id="logo" src="/main/logo.png"></a>
+    <a class="a_left" href="#"><img id="state" src="/main/state.png"></a>
+    <form action="/search" method="get" id="search">
+      <select>
+        <option>All</option>
+        <option>Audivle Books&Originals</option>
+        <option>sbu</option>
+        <option>Alexa Skills</option>
+        <option>Amazon Pharmacy</option>
+        <option>Amazon Warehouse</option>
+        <option>Appliances</option>
+        <option>Apps&Games</option>
+        <option>Arts,Crafrs&Sewing</option>
+        <option>Automotive Parts&accessoties</option>
+        <option>Baby</option>
+        <option>Beauty&Personal Care</option>
+        <option>Books</option>
+      </select>
+      <input id="text" type="text" name="search">
+      <input id="go" type="submit" value="go">
+    </form>
+    <div id="top_right">
+      <span>
+        <img id="usa"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/285px-Flag_of_the_United_States.svg.png">▽
+        <div id="hidden1" class="none">
+          <input type="radio" value="English - EN">
+          <input type="radio" value="Eapanol - ES">
+          <a href="/">Lean more</a>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/285px-Flag_of_the_United_States.svg.png">
+          <span>You are shopping on Amazon.com.</span>
+          <a href="/">Change coutry/region.</a>
+        </div>
+      </span>
+      <span id="sign" class="margin10">
+        <span class="color_white">Hello,Sign in</span>
+        <p class="color_white">Account & lists▼</p>
+        <div id="hidden2" class="none">
+          <ul>
+            <li><a href="/user/user">
+                <h3>Your List
+              </a></h3>
+            </li>
+            <li><a href="/user/user">Create a List</a></li>
+            <li><a href="/user/user">Find a LIst or Registry</a></li>
+            <li><a href="/user/user">AmazonSmile Charity Lists</a></li>
+          </ul>
+          <ul>
+            <li><a href="/user/user">
+                <h3>Your Account</h3>
+              </a></li>
+            <li><a href="/user/user">Account</a></li>
+            <li><a href="/user/user">Orders</a></li>
+            <li><a href="/user/user">Recommendations</a></li>
+            <li><a href="/user/user">Browsing History</a></li>
+            <li><a href="/user/user">Watchlist</a></li>
+            <li><a href="/user/user">Video Purchases &Tentals</a></li>
+            <li><a href="/user/user">Kindle Unlinited</a></li>
+            <li><a href="/user/user">Content & Devices</a></li>
+            <li><a href="/user/user">Subscribe & SabeItems</a></li>
+          </ul>
+        </div>
+      </span>
+      <a class="a_left margin10" href="#">
+        <span class="color_white">Retuns</span>
+        <p class="color_white">& Orders</p>
+      </a>
+      <a class="a_right margin10" href="#"><img src="/main/busket.png"></a>
+    </div>
+  </div>
+  <div id="header_bottum">
+    <a id="btn" onclick="layerFn()">
+      <div id="make_icon">
+        <span class="top1"></span>
+        <span class="top1"></span>
+        <span class="top1"></span>
+      </div>
+      <span>All</span>
+    </a>
+    <a href="/sub/todaysdeal">Today's Deals</a>
+    <a href="/sub/customerservice">Customer Sevice</a>
+    <a href="/sub/giftcards">Gift Cards</a>
+    <a href="/sub/registry">Registry</a>
+    <a href="/sub/sell">Sell</a>
+    <a class="a_right" href="#">Amazon's response to covid-19</a>
+  </div>

@@ -8,7 +8,9 @@
 
 }
 
-
+.browse_wrap{
+    height:400px;
+}
 ul,li{
     list-style: none;
 }
