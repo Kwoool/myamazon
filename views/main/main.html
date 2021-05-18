@@ -56,7 +56,9 @@
           </span>
           <span id="sign" class="margin10">
             {% if isLogin %}
-            <span class="color_white"><a href="/user/logout">로그아웃</a>Hello,Sign in{{userid}}</span>
+            <span class="color_white">
+              <a id="logout" href="/user/logout">로그아웃</a>
+              Hello,Sign in{{userid}}</span>
             {% endif %}
             <p class="color_white">Account & lists▼</p>
             <div id="hidden2" class="none">

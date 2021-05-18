@@ -46,6 +46,9 @@ body{
 .color_white{
     color: #ffffff;
 }
+#logout{
+    color: #ffffff;
+}
 .a_left{
     height: 60px;
     display: inline-block;
@@ -61,7 +64,7 @@ body{
    float: right;
 }
 #search{
-    width: 60%;
+    width: 40%;
     height: 60px;
     display: inline-block;
     float: left;
@@ -73,7 +76,7 @@ body{
     height: 30px;
 }
 #text{
-    width: 45vw;
+    width: 25vw;
     display: inline;
 }
 #go{
