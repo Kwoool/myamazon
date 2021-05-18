@@ -52,10 +52,15 @@
             </div>
             <div id="login_footer_year">© 1996-2021, Amazon.com, Inc. or its affiliates</div>
         </div>
-    </div>
+    </div> 
 
+    {% if flag == '0' %}
+    <script type = "text/javascript">
+    alert('틀렸다')
+    </script>
+    {% endif %}
 
-    <script>
+    <script type = "text/javascript">
         const mustfill = document.querySelectorAll(".mustfill");
         const loginform = document.querySelector("#loginform");
         const loginbtn = document.querySelector('#submit_btn');

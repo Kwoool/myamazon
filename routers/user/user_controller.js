@@ -50,10 +50,12 @@ let log_check = async (req,res)=> {
             userPw:userPw,
         }
     })
-    let userid = result.dataValues.userId;
+  
     if(result == null){
-        res.redirect('/user/user?flag=0');
+        res.redirect('./user?flag=0');
     }else{
+        let userid = result.dataValues.userId;
+
         req.session.userEmail = userEmail;
         req.session.uid = userid;
         req.session.isLogin = true;
