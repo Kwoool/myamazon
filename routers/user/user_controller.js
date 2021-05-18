@@ -1,7 +1,8 @@
 const { User, Product } = require('../../models/index');
 
 let user = (req,res)=>{
-    res.render('./user/user.html',{})
+    flag = req.query.flag
+    res.render('./user/user.html',{flag})
 }
 
 let account = (req,res)=>{
@@ -38,9 +39,43 @@ let login_success = async (req,res)=>{
     })
 }
 
+let log_check = async (req,res)=> {
+    let userEmail = req.body.userEmail;
+    let userPw = req.body.userPw;
+
+    let result = await User.findOne({
+        where:{
+            userEmail:userEmail,
+            userPw:userPw,
+        }
+    })
+    let username = result.dataValues.userId;
+
+    if(result == null){
+        res.redirect('/user/user?flag=0');
+    }else{
+        req.session.userEmail = userEmail;
+        req.session.username = username;
+        req.session.isLogin = true;
+        req.session.save(() => {
+            res.redirect('/main'); 
+        })
+    }
+}
+
+
+
+
+
+
+
+
+
+
 module.exports ={ 
     user,
     account,
     account_success,
     login_success,
+    log_check,
 }; 
