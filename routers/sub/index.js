@@ -21,7 +21,7 @@ router.get('/giftcards',controller.giftcards);
 router.get('/registry',controller.registry);
 router.get('/sell',controller.sell);
 router.get('/address',controller.address);
-router.get('/product',controller.product);
+router.get('/product',upload.single('img'),controller.product);
 router.get('/buy_check',controller.buy_check2);
 router.post('/buy_check',controller.buy_check);
 

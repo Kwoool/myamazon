@@ -5,7 +5,10 @@
 
 a{
     text-decoration: none;
+    text-decoration-line: none;
+    color: skyblue;
 }
+
 
 .container{
     width:348px;

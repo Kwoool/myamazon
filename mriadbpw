@@ -1,3 +1,4 @@
 박대권 mariadb pw : root
 
 각자 github에서 pull 했을때 체크해야할 부분: config password 부분, npm install express, mysql , sequelize 등등 다시 다운받는것 .
+

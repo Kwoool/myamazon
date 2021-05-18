@@ -12,6 +12,10 @@
 
 <body>
   <div id="wrap">
+    {% if isLogin %}
+    {{userEmail}}
+    {{username}}
+    {% endif %}
     <!-- header start -->
     <div id="header">
       <div id="header_top">
