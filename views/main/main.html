@@ -55,17 +55,14 @@
             </div>
           </span>
           <span id="sign" class="margin10">
-            {% if isLogin %}
-            <span class="color_white">
-              <a id="logout" href="/user/logout">로그아웃</a>
-              Hello,Sign in{{userid}}</span>
-            {% endif %}
             <p class="color_white">Account & lists▼</p>
             <div id="hidden2" class="none">
               <ul>
-                <li><a href="/user/user">
+                <li>
+                  <a href="/user/user">
                     <h3>Your List
-                  </a></h3>
+                  </a>
+                </h3>
                 </li>
                 <li><a href="/user/user">Create a List</a></li>
                 <li><a href="/user/user">Find a LIst or Registry</a></li>
@@ -753,6 +750,11 @@
         </ul>
       </div>
     </div>
+    {% if isLogin %}
+    <span class="login">
+      Hello,Sign in{{userid}}
+      <a id="logout" href="/user/logout">로그아웃</a> </span>
+    {% endif %}
 </body>
 
 <script type="text/javascript">

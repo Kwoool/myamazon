@@ -43,11 +43,15 @@ body{
     float: left;
     color: #ffffff;
 }
-.color_white{
+.login{
+    position: absolute;
+    right: 0;
+    top: 200px;
     color: #ffffff;
+    background-color: #7f13d6;
 }
 #logout{
-    color: #ffffff;
+    background-color: #7f13d6;
 }
 .a_left{
     height: 60px;
