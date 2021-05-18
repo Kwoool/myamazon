@@ -1,8 +1,13 @@
 {
   "development": {
     "username": "root",
+<<<<<<< HEAD
     "password": "root",
     "database": "amazon1",
+=======
+    "password": "0000",
+    "database": "amazon",
+>>>>>>> origin/master
     "host": "127.0.0.1",
     "dialect": "mysql",
     "dateString":"date"

@@ -2,15 +2,6 @@ create database amazon;
 
 use amazon;
 
-create table product(
-    category varchar(50),
-    product_name varchar(50),
-    price varchar(50) not null,
-    info varchar(50),
-    product_image varchar(50),
-    hit int(50)
-);
-
 INSERT INTO product (category, product_name, price, info, product_image, hit ) VALUES ( 'book', 'Killing the Mob The Fight Against Organized Crime in America', 18, 'n the tenth book in the multimillion-selling Killing series', '/sub/product1.jpg', 0);
 INSERT INTO product (category, product_name, price, info, product_image, hit ) VALUES ( 'book', 'DBT For Dummies', 24, 'Dialectical Behavior Therapy (DBT) is one of the', '/sub/product3.jpg', 0);
 INSERT INTO product (category, product_name, price, info, product_image, hit ) VALUES ( 'book', 'Brown Bear, Brown Bear, What Do You See?', 5, ' big happy frog, a plump purple cat', '/sub/product1.jpg', 0);

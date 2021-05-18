@@ -1,4 +1,4 @@
-const { User } = require('../../models/index');
+const { User, Product } = require('../../models/index');
 
 let user = (req,res)=>{
     res.render('./user/user.html',{})
