@@ -32,23 +32,35 @@ a{
 }
 
 .product_list{
+    margin-left: 100px;
     width:80vw;
 }
-.product_list>ul{
+
+.product_list>div{
+    width:18vw;
     display: inline-block;
-    width:13vw;
 }
+
+.product_list>div>ul{
+    margin: 0 auto;
+    width:300px;
+    margin-bottom: 40px;
+}
+
 .product_list>ul>li.button{
     margin-top: 70px;
     border:gray 1px solid;
     text-align: center;
     background: #f0c14b; 
     color:white;
-
+    width:200px;
 }
 
 .price{
-
+    color:black;
+    font-size: 20px;
+}
+.red{
     color:red;
     font-size: 20px;
 }
@@ -59,4 +71,13 @@ a{
 .img>img, .img{
     width:200px;
     height:250px;
+}
+
+
+.boxo{
+    background: chocolate;
+    width:150px;
+    height:20px;
+    font-weight: bold;
+    color:white;
 }

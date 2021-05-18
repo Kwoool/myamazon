@@ -2,7 +2,7 @@ const { User, Product } = require('../../models');
 
 let today = async (req,res)=>{
     let result = await Product.findAll({
-        where: { category: "movie" }
+        where: { category: "music" }
     })
     
     res.render('./sub/TodaysDeals.html',{
@@ -46,6 +46,7 @@ let address = async (req,res)=>{
         productName:productName,
     })
 }
+
 let buy_check2 = async (req,res)=>{
 
     let productName = req.query.productName
@@ -56,9 +57,9 @@ let buy_check2 = async (req,res)=>{
     });
 
     res.render('./sub/buy_check.html',{
+        product_image:result.product_image,
         product_name:result.product_name,
-        product_cost:result.price,
-        productName:productName,
+        product_cost:result.price
     })
 }
 
@@ -80,6 +81,7 @@ let buy_check = async (req,res)=>{
         phone:req.body.phone,
         card:req.body.card,
         payment:req.body.payment,
+        product_image:result.product_image,
         product_name:result.product_name,
         product_cost:result.price,
     })

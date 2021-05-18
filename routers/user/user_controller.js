@@ -1,4 +1,5 @@
 const { User, Product } = require('../../models/index');
+const session = require('express-session')
 
 let user = (req,res)=>{
     flag = req.query.flag
@@ -62,14 +63,6 @@ let log_check = async (req,res)=> {
         })
     }
 }
-
-
-
-
-
-
-
-
 
 
 module.exports ={ 
