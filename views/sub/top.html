@@ -1,12 +1,14 @@
-{% if isLogin %}
-{{userEmail}}
-{{username}}
-{% endif %}
 <!-- header start -->
 <div id="header">
   <div id="header_top">
-    <a class="a_left" href="/"><img id="logo" src="/main/logo.png"></a>
-    <a class="a_left" href="#"><img id="state" src="/main/state.png"></a>
+    <div id="top_left">
+      <a href="/">
+        <img id="logo" src="/main/logo.png">
+      </a>
+      <a href="/">
+        <img id="state" src="/main/state.png">
+      </a>
+    </div>
     <form action="/search" method="get" id="search">
       <select>
         <option>All</option>
@@ -27,7 +29,14 @@
       <input id="go" type="submit" value="go">
     </form>
     <div id="top_right">
-      <span>
+      {% if isLogin %}
+      <span id="login">
+        Hello! {{userid}}
+        <a id="logout" href="/user/logout">로그아웃
+        </a>
+       </span>
+      {% endif %}
+      <span id="usa1">
         <img id="usa"
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/285px-Flag_of_the_United_States.svg.png">▽
         <div id="hidden1" class="none">
@@ -41,13 +50,15 @@
         </div>
       </span>
       <span id="sign" class="margin10">
-        <span class="color_white">Hello,Sign in</span>
+        <p class="color_white">hellow sign in</p>
         <p class="color_white">Account & lists▼</p>
         <div id="hidden2" class="none">
           <ul>
-            <li><a href="/user/user">
+            <li>
+              <a href="/user/user">
                 <h3>Your List
-              </a></h3>
+              </a>
+              </h3>
             </li>
             <li><a href="/user/user">Create a List</a></li>
             <li><a href="/user/user">Find a LIst or Registry</a></li>
@@ -92,3 +103,4 @@
     <a href="/sub/sell">Sell</a>
     <a class="a_right" href="#">Amazon's response to covid-19</a>
   </div>
+  <!-- header end -->

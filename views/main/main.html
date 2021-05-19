@@ -12,15 +12,17 @@
 
 <body>
   <div id="wrap">
-    {% if isLogin %}
-    {{userEmail}}
-    {{username}}
-    {% endif %}
     <!-- header start -->
     <div id="header">
       <div id="header_top">
-        <a class="a_left" href="/"><img id="logo" src="/main/logo.png"></a>
-        <a class="a_left" href="#"><img id="state" src="/main/state.png"></a>
+        <div id="top_left">
+          <a href="/">
+            <img id="logo" src="/main/logo.png">
+          </a>
+          <a href="/">
+            <img id="state" src="/main/state.png">
+          </a>
+        </div>
         <form action="/search" method="get" id="search">
           <select>
             <option>All</option>
@@ -41,7 +43,14 @@
           <input id="go" type="submit" value="go">
         </form>
         <div id="top_right">
-          <span>
+          {% if isLogin %}
+          <span id="login">
+            Hello! {{userid}}
+            <a id="logout" href="/user/logout">로그아웃
+            </a>
+           </span>
+          {% endif %}
+          <span id="usa1">
             <img id="usa"
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/285px-Flag_of_the_United_States.svg.png">▽
             <div id="hidden1" class="none">
@@ -55,6 +64,7 @@
             </div>
           </span>
           <span id="sign" class="margin10">
+            <p class="color_white">hellow sign in</p>
             <p class="color_white">Account & lists▼</p>
             <div id="hidden2" class="none">
               <ul>
@@ -62,7 +72,7 @@
                   <a href="/user/user">
                     <h3>Your List
                   </a>
-                </h3>
+                  </h3>
                 </li>
                 <li><a href="/user/user">Create a List</a></li>
                 <li><a href="/user/user">Find a LIst or Registry</a></li>
@@ -289,7 +299,8 @@
       <!-- eighth_line start -->
       <div id="eighth_line">
         <a href="/sub/todaysdeal">
-          <img id="eighth_line_img" src="https://images-na.ssl-images-amazon.com/images/G/01/ape/static/fallback/US_CENTER_PROMO_BACKUP._CB1578606135_.jpg">
+          <img id="eighth_line_img"
+            src="https://images-na.ssl-images-amazon.com/images/G/01/ape/static/fallback/US_CENTER_PROMO_BACKUP._CB1578606135_.jpg">
         </a>
       </div>
       <!-- eighth_line end -->
@@ -298,28 +309,32 @@
         <div class="style_box">
           <h2>comfy stykes for her</h2>
           <a href="/sub/todaysdeal">
-            <img class="style_two" src="https://images-na.ssl-images-amazon.com/images/G/01/home/Discover/XCM_CUTTLE_1319957_1641526_US_3764438_379x304_1X_es_US._SY304_CB657204649_.jpg">
+            <img class="style_two"
+              src="https://images-na.ssl-images-amazon.com/images/G/01/home/Discover/XCM_CUTTLE_1319957_1641526_US_3764438_379x304_1X_es_US._SY304_CB657204649_.jpg">
           </a>
           <a href="/sub/todaysdeal">see more ></a>
         </div>
         <div class="style_box">
           <h2>comfy stykes for her</h2>
           <a href="/sub/todaysdeal">
-            <img class="style_two" src="https://images-na.ssl-images-amazon.com/images/G/01/kindle/journeys/ZmVhMDM4ZmYt/ZmVhMDM4ZmYt-OWJlYmQ1MjUt-w379._SY304_CB412342025_.jpg">
+            <img class="style_two"
+              src="https://images-na.ssl-images-amazon.com/images/G/01/kindle/journeys/ZmVhMDM4ZmYt/ZmVhMDM4ZmYt-OWJlYmQ1MjUt-w379._SY304_CB412342025_.jpg">
           </a>
           <a href="/sub/todaysdeal">see more ></a>
         </div>
         <div class="style_box">
           <h2>comfy stykes for her</h2>
           <a href="/sub/todaysdeal">
-            <img class="style_two" src="https://images-na.ssl-images-amazon.com/images/G/01/kindle/merch/periodicals/newspapers/Unified_Offer/TWP_UO_Digital_Single_image_card_379x304._SY304_CB418552748_.jpg">
+            <img class="style_two"
+              src="https://images-na.ssl-images-amazon.com/images/G/01/kindle/merch/periodicals/newspapers/Unified_Offer/TWP_UO_Digital_Single_image_card_379x304._SY304_CB418552748_.jpg">
           </a>
           <a href="/sub/todaysdeal">see more ></a>
         </div>
         <div class="style_box">
           <h2>comfy stykes for her</h2>
           <a href="/sub/todaysdeal">
-            <img class="style_two" src="https://images-na.ssl-images-amazon.com/images/G/01/digital/adrive/images/2021/grad/APH_210421_grad-21_desktop_category-card_1x._SY304_CB670177379_.jpg">
+            <img class="style_two"
+              src="https://images-na.ssl-images-amazon.com/images/G/01/digital/adrive/images/2021/grad/APH_210421_grad-21_desktop_category-card_1x._SY304_CB670177379_.jpg">
           </a>
           <a href="/sub/todaysdeal">see more ></a>
         </div>
@@ -346,9 +361,9 @@
           {% for item in clothes %}
           <li>
             <a href="/sub/product?productName={{item.product_name}}">
-            <img class="style_one" src="{{item.product_image}}">
-          </a>
-        </li>
+              <img class="style_one" src="{{item.product_image}}">
+            </a>
+          </li>
           {% endfor %}
         </ul>
       </div>
@@ -416,8 +431,8 @@
       <div id="footer">
         <div id="footer_top">
           <a href="#">
-             <span>Back to top</span>
-            </a>
+            <span>Back to top</span>
+          </a>
           <div id="footer_top_top">
             <ul>
               <li><span> Get to Know Us </span></li>
@@ -601,7 +616,7 @@
                 <a href="#">Sell on Amazonc</a>
                 <a href="#">Amazon Music</a>
                 <a href="#">Amazon Music</a>
-                </li>
+              </li>
               <li>
                 <a href="#">Amazon</a>
                 <a href="#">Amazon Music</a>
@@ -750,11 +765,6 @@
         </ul>
       </div>
     </div>
-    {% if isLogin %}
-    <span class="login">
-      Hello,Sign in{{userid}}
-      <a id="logout" href="/user/logout">로그아웃</a> </span>
-    {% endif %}
 </body>
 
 <script type="text/javascript">
