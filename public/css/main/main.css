@@ -144,6 +144,7 @@ body{
     border: 1px solid #0F1111;
     right: 150px;
     z-index: 6;
+    display: none;
 }
 #hidden2>ul{
     width: 45%;
@@ -586,14 +587,42 @@ body{
 }
 
 /* hiddenbar */
+#popup{
+    width:100%;
+    height:100%;
+    position:fixed;
+    z-index: 10;
+    top:0;
+    display: none;
+}
+
+#popup::after{
+    width:100%;
+    height:100%;
+    content: "";
+    position: absolute;
+    z-index: 11;
+    top:0;
+    background-color: black;
+    opacity: 0.7;
+}
 #hidden_bar{
     width: 350px;
     height: 6500px;
     position: absolute;
     left: 0;
     top: 0;
-    z-index: 10;
-    background: #ffffff;
+    z-index: 12;
+    background-color: #ffffff;
+    animation: popup 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes popup{
+    from{
+        left:-350px;
+    }to{
+        left: 0;
+    }
 }
 #name{
     display: inline-block;
