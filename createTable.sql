@@ -1,3 +1,32 @@
+CREATE DATABASE AMAZON;
+
+USE AMAZON;
+
+CREATE TABLE IF NOT EXISTS `product`
+  (
+     `id`            INTEGER NOT NULL PRIMARY KEY auto_increment,
+     `category`      VARCHAR(50),
+     `product_name`  VARCHAR(50),
+     `price`         INTEGER NOT NULL,
+     `info`          VARCHAR(50),
+     `product_image` VARCHAR(50),
+     `hit`           INTEGER
+  );
+
+
+
+CREATE TABLE IF NOT EXISTS `account`
+  (
+     `id`        INTEGER NOT NULL auto_increment,
+     `userid`    VARCHAR(100) NOT NULL,
+     `useremail` VARCHAR(255) NOT NULL,
+     `userpw`    VARCHAR(100) NOT NULL,
+     PRIMARY KEY (`id`)
+  )
+engine=innodb
+DEFAULT charset=utf8
+COLLATE utf8_general_ci; 
+
 INSERT INTO product (category, product_name, price, info, product_image, hit ) VALUES ( 'book', 'Killing the Mob The Fight Against Organized Crime in America', 18, 'n the tenth book in the multimillion-selling Killing series', '/sub/book1.jpg', 0);
 INSERT INTO product (category, product_name, price, info, product_image, hit ) VALUES ( 'book', 'DBT For Dummies', 24, 'Dialectical Behavior Therapy (DBT) is one of the', '/sub/book2.jpg', 0);
 INSERT INTO product (category, product_name, price, info, product_image, hit ) VALUES ( 'book', 'Brown Bear, Brown Bear, What Do You See?', 5, ' big happy frog, a plump purple cat', '/sub/book3.png', 0);
