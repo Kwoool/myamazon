@@ -9,7 +9,7 @@ const app = express();
 
 app.use((req,res,next)=>{
     req.ingoo = 'ingoo?~'
-    next()
+    next();
 })
 
 
@@ -43,4 +43,4 @@ app.get('/',(req,res)=>{
 
 app.listen(3000,()=>{
     console.log('server start port 3000');
-})
+});
