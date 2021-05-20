@@ -301,7 +301,7 @@ body{
     height: 300px;
     overflow: hidden;
 }
-#one_line_top>img{
+#one_line_top>a{
     position: absolute;
     left: 0;
     float: left;

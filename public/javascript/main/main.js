@@ -3,7 +3,7 @@ var gg = document.querySelector("#left");
 let a = 0;
 let b = 1;
 function left(){
-    let img = document.querySelectorAll("#one_line_top>img");
+    let img = document.querySelectorAll("#one_line_top>a");
     if(a == img.length){
         a = 0;
     }
@@ -25,7 +25,7 @@ function left(){
     b++;
 }
 function right(){
-    let img = document.querySelectorAll("#one_line_top>img");
+    let img = document.querySelectorAll("#one_line_top>a");
     if(a == -1){
         a = img.length - 1;
     }
