@@ -1,5 +1,7 @@
 const express = require('express');
 const session = require('express-session');
+const passport = require('passport')
+const cookieParser = require('cookie-parser');
 const app = express();
 
 /*지금 미들웨어를 만들고 있는거다*/ 
