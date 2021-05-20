@@ -2,6 +2,7 @@ const express = require('express');
 const session = require('express-session');
 const passport = require('passport')
 const cookieParser = require('cookie-parser');
+const passportConfig = require('./passport/index')
 const app = express();
 
 /*지금 미들웨어를 만들고 있는거다*/ 
@@ -16,6 +17,9 @@ app.use((req,res,next)=>{
 app.use(session({
     secret:'sdfsdfsdfqwqq',
 }));
+
+app.use(passport.initialize());
+app.use(passport.session());
 
 app.get('/',(req,res)=>{
     console.log(req.session)
